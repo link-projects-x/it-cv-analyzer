@@ -1,0 +1,346 @@
+{
+  "schema_version": "1.0",
+  "profile": {
+    "schema_version": "1.0",
+    "id": "6f1c2b9e-3d4a-4f7b-9a10-2c5e8d7b1a01",
+    "created_at": "2026-10-31T09:00:00Z",
+    "skills": [
+      {
+        "id": "typescript",
+        "level": 3,
+        "evidence": "4 years of TypeScript in a SaaS backend"
+      },
+      {
+        "id": "nodejs",
+        "level": 3,
+        "evidence": "Node.js services in production"
+      },
+      {
+        "id": "python",
+        "level": 2,
+        "evidence": "pet project: document classifier in Python"
+      },
+      {
+        "id": "open-source-llm",
+        "level": 2,
+        "evidence": "pet project: local LLM via Ollama"
+      },
+      {
+        "id": "prompt-engineering",
+        "level": 2,
+        "evidence": "prompt design for the classifier pet project"
+      },
+      {
+        "id": "sql",
+        "level": 3,
+        "evidence": "PostgreSQL schema design and queries in production"
+      },
+      {
+        "id": "postgresql",
+        "level": 3,
+        "evidence": "PostgreSQL schema design and queries in production"
+      },
+      {
+        "id": "docker",
+        "level": 2,
+        "evidence": "Docker Compose for local development"
+      },
+      {
+        "id": "git",
+        "level": 3,
+        "evidence": "Git flow and code review at work"
+      },
+      {
+        "id": "react",
+        "level": 3,
+        "evidence": "React admin panel in production"
+      }
+    ],
+    "experience_years": 4,
+    "english": "B2",
+    "seniority": "middle",
+    "role_type": "other",
+    "salary_features": {
+      "category": "Software Engineering & Architecture",
+      "title": "Middle",
+      "primary_language": "TypeScript",
+      "company_type": "Продуктова",
+      "company_size": null,
+      "domains": [
+        "AI / Data / Analytics"
+      ],
+      "residence": "В Україні"
+    },
+    "unmapped": [
+      {
+        "text": "Prisma"
+      }
+    ],
+    "parse": {
+      "model": "anthropic.claude-haiku-5-5",
+      "prompt_version": "profile-v1",
+      "parsed_at": "2026-10-31T09:00:03Z"
+    }
+  },
+  "vacancies": [
+    {
+      "similarity": 0.81,
+      "vacancy": {
+        "schema_version": "1.0",
+        "id": "dou-100001",
+        "source": "dou",
+        "url": "https://jobs.dou.ua/companies/example-co/vacancies/100001/",
+        "title": "Middle AI Engineer",
+        "company": "Example Co",
+        "scraped_at": "2026-10-31T06:00:00Z",
+        "seniority": "middle",
+        "role_type": "ai-engineer",
+        "requirements": [
+          {
+            "any_of": [
+              "python"
+            ],
+            "min_level": 3,
+            "required": true,
+            "evidence": "3+ years of commercial Python development",
+            "min_years": 3
+          },
+          {
+            "any_of": [
+              "llm-api"
+            ],
+            "min_level": 3,
+            "required": true,
+            "evidence": "production experience with LLM-based systems",
+            "min_years": null
+          },
+          {
+            "any_of": [
+              "rag"
+            ],
+            "min_level": 2,
+            "required": true,
+            "evidence": "hands-on experience building RAG pipelines",
+            "min_years": null
+          },
+          {
+            "any_of": [
+              "pgvector",
+              "qdrant",
+              "pinecone"
+            ],
+            "min_level": 2,
+            "required": true,
+            "evidence": "experience with a vector store (pgvector, Qdrant or Pinecone)",
+            "min_years": null
+          },
+          {
+            "any_of": [
+              "aws",
+              "azure",
+              "gcp"
+            ],
+            "min_level": 2,
+            "required": true,
+            "evidence": "experience with at least one cloud (AWS, Azure or GCP)",
+            "min_years": null
+          },
+          {
+            "any_of": [
+              "docker"
+            ],
+            "min_level": 2,
+            "required": true,
+            "evidence": "Docker",
+            "min_years": null
+          },
+          {
+            "any_of": [
+              "langgraph"
+            ],
+            "min_level": 1,
+            "required": false,
+            "evidence": "LangGraph would be a plus",
+            "min_years": null
+          },
+          {
+            "any_of": [
+              "llm-evals"
+            ],
+            "min_level": 1,
+            "required": false,
+            "evidence": "familiarity with LLM evaluation (Langfuse, RAGAS)",
+            "min_years": null
+          }
+        ],
+        "experience": {
+          "min_years": 3,
+          "max_years": null
+        },
+        "english": {
+          "min_level": "B2",
+          "evidence": "Upper-Intermediate English"
+        },
+        "salary": {
+          "from": 3000,
+          "to": 4500,
+          "currency": "USD",
+          "period": "month"
+        },
+        "domains": [
+          "Fintech / Banking / Insurance / Capital markets"
+        ],
+        "location": {
+          "remote": true,
+          "cities": [
+            "Kyiv"
+          ]
+        },
+        "unmapped": [
+          {
+            "text": "Pydantic",
+            "required": true
+          }
+        ],
+        "parse": {
+          "model": "anthropic.claude-haiku-5-5",
+          "prompt_version": "vacancy-v1",
+          "parsed_at": "2026-10-31T06:05:00Z"
+        }
+      }
+    },
+    {
+      "similarity": 0.42,
+      "vacancy": {
+        "schema_version": "1.0",
+        "id": "dou-100002",
+        "source": "dou",
+        "url": "https://jobs.dou.ua/companies/example-co/vacancies/100002/",
+        "title": "ML Engineer (Computer Vision)",
+        "company": "Example Co",
+        "scraped_at": "2026-10-31T06:00:00Z",
+        "seniority": "senior",
+        "role_type": "cv-engineer",
+        "requirements": [
+          {
+            "any_of": [
+              "python"
+            ],
+            "min_level": 3,
+            "required": true,
+            "evidence": "5+ years of Python",
+            "min_years": 5
+          },
+          {
+            "any_of": [
+              "pytorch"
+            ],
+            "min_level": 3,
+            "required": true,
+            "evidence": "production experience with PyTorch",
+            "min_years": null
+          },
+          {
+            "any_of": [
+              "computer-vision"
+            ],
+            "min_level": 3,
+            "required": true,
+            "evidence": "object detection and tracking in production",
+            "min_years": null
+          },
+          {
+            "any_of": [
+              "model-inference"
+            ],
+            "min_level": 2,
+            "required": true,
+            "evidence": "ONNX / TensorRT optimization",
+            "min_years": null
+          },
+          {
+            "any_of": [
+              "aws-sagemaker",
+              "aws-ec2"
+            ],
+            "min_level": 1,
+            "required": false,
+            "evidence": "AWS (SageMaker, EC2) will be a plus",
+            "min_years": null
+          }
+        ],
+        "experience": {
+          "min_years": 5,
+          "max_years": null
+        },
+        "english": {
+          "min_level": "B1",
+          "evidence": "Intermediate English"
+        },
+        "salary": null,
+        "domains": [
+          "DefTech / MilTech"
+        ],
+        "location": {
+          "remote": false,
+          "cities": [
+            "Lviv"
+          ]
+        },
+        "unmapped": [],
+        "parse": {
+          "model": "anthropic.claude-haiku-5-5",
+          "prompt_version": "vacancy-v1",
+          "parsed_at": "2026-10-31T06:05:00Z"
+        }
+      }
+    }
+  ],
+  "salary": {
+    "currency": "USD",
+    "period": "month",
+    "point": 2700,
+    "low": null,
+    "high": null,
+    "model_version": "example",
+    "grid": {
+      "english": {
+        "A1": 1700,
+        "A2": 1900,
+        "B1": 2300,
+        "B2": 2700,
+        "C1": 3100,
+        "C2": 3200
+      },
+      "experience_years": {
+        "0": 1380,
+        "1": 1710,
+        "2": 2040,
+        "3": 2370,
+        "4": 2700,
+        "5": 3030,
+        "6": 3360,
+        "7": 3690,
+        "8": 4020,
+        "9": 4350,
+        "10": 4680,
+        "11": 4680,
+        "12": 4680,
+        "13": 4680,
+        "14": 4680,
+        "15": 4680
+      },
+      "company_type": {
+        "Продуктова": 2700,
+        "Сервісна (аутсорсингова)": 2450,
+        "Аутстафінгова": 2500,
+        "Стартап": 2600
+      },
+      "domains": {
+        "AI / Data / Analytics": 2700,
+        "DefTech / MilTech": 2900,
+        "Fintech / Banking / Insurance / Capital markets": 2800
+      }
+    }
+  }
+}

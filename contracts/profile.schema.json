@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dou-cv-analyzer.local/contracts/profile.schema.json",
+  "title": "Candidate profile after CV parsing",
+  "type": "object",
+  "required": [
+    "schema_version", "id", "created_at", "skills", "experience_years",
+    "english", "seniority", "role_type", "salary_features", "unmapped", "parse"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "$ref": "common.schema.json#/$defs/schemaVersion" },
+    "id": { "type": "string", "format": "uuid" },
+    "created_at": { "type": "string", "format": "date-time" },
+
+    "skills": {
+      "description": "Skills with levels. Frontend sliders change level on a copy of the profile in the browser; the original profile is not modified.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "level", "evidence"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "$ref": "common.schema.json#/$defs/skillId" },
+          "level": { "$ref": "common.schema.json#/$defs/skillLevel" },
+          "evidence": { "oneOf": [{ "$ref": "common.schema.json#/$defs/evidence" }, { "type": "null" }] }
+        }
+      }
+    },
+
+    "experience_years": {
+      "description": "Years of experience in the current specialty. Same meaning as the survey column «Загальний стаж роботи за нинішньою ІТ-спеціальністю».",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 50
+    },
+    "english": {
+      "oneOf": [{ "$ref": "common.schema.json#/$defs/cefr" }, { "type": "null" }]
+    },
+    "seniority": { "$ref": "common.schema.json#/$defs/seniority" },
+    "role_type": { "$ref": "common.schema.json#/$defs/roleType" },
+
+    "salary_features": {
+      "description": "Salary model inputs. Values are copied 1:1 from the DOU survey columns (June 2026). null means the CV has no data; the model substitutes the most frequent value.",
+      "type": "object",
+      "required": ["category", "title", "primary_language", "company_type", "company_size", "domains", "residence"],
+      "additionalProperties": false,
+      "properties": {
+        "category": {
+          "description": "Survey column «Категорії».",
+          "enum": [
+            "DS / AI / ML / Data Engineering",
+            "Software Engineering & Architecture",
+            "DevOps & SRE",
+            "Analytics",
+            "QA",
+            "Tech Leadership",
+            null
+          ]
+        },
+        "title": {
+          "description": "Survey column «Title_clean».",
+          "enum": [
+            "Intern/Trainee", "Junior", "Middle", "Senior",
+            "Lead", "Team Lead (for SE & QA: Lead + Team Lead)", "Tech Lead",
+            "Architect", "Staff", "Principal", "Head", "Manager",
+            "CEO / C-level (Chief) / Director / VP", "Немає тайтлу",
+            null
+          ]
+        },
+        "primary_language": {
+          "description": "Survey column «Основна мова програмування». Lists values with >= 25 responses.",
+          "enum": [
+            "Python", "TypeScript", "JavaScript", "Java", "C# / .NET", "PHP", "SQL",
+            "C++", "Kotlin", "Swift", "Go", "Bash / Shell", "Dart", "Ruby", "C",
+            "Rust", "Scala", "PowerShell", "Мови розробки БД (PL/SQL, Transact-SQL)",
+            "Не можу обрати одну основну мову",
+            null
+          ]
+        },
+        "company_type": {
+          "description": "Survey column «Основний напрям роботи компанії в якій працюєте».",
+          "enum": [
+            "Продуктова", "Сервісна (аутсорсингова)", "Аутстафінгова", "Стартап",
+            "НЕ ІТ-компанія (банк, телеком, ритейл тощо)", "Державне підприємство / установа",
+            "Фрилансер", "Інша (ГО / агенція / заклад освіти тощо)",
+            null
+          ]
+        },
+        "company_size": {
+          "description": "Survey column «Кількість спеціалістів у вашій компанії в Україні».",
+          "enum": [
+            "Лише я / фриланс", "До 10 спеціалістів", "До 50", "До 200", "До 1000", "Понад 1000",
+            "Іноземний роботодавець без команди в Україні", "Працюю в DefTech, не можу відповісти",
+            null
+          ]
+        },
+        "domains": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "common.schema.json#/$defs/domain" }
+        },
+        "residence": {
+          "description": "Survey column «Де ви зараз живете?».",
+          "enum": [
+            "В Україні",
+            "За кордоном, але планую повернутися",
+            "За кордоном, важко сказати, чи повернуся",
+            "За кордоном — скоріше за все / точно не повернуся",
+            null
+          ]
+        }
+      }
+    },
+
+    "unmapped": { "$ref": "common.schema.json#/$defs/unmapped" },
+    "parse": { "$ref": "common.schema.json#/$defs/parseMeta" }
+  }
+}

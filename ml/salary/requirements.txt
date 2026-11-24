@@ -1,0 +1,6 @@
+# Pinned to the SageMaker scikit-learn 1.9-0 container: docker/sklearn/1.9-0/uv.lock in aws/deep-learning-containers
+# (Python 3.12). package.sh copies this file into model.tar.gz; train with these versions (README.md -> SageMaker).
+scikit-learn==1.9.0
+pandas==2.2.3
+numpy==2.5.1
+joblib==1.5.3

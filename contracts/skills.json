@@ -1,0 +1,4299 @@
+{
+  "schema_version": "1.0",
+  "levels": {
+    "0": "no experience",
+    "1": "tried it: course, tutorial, study task",
+    "2": "pet project or non-production use",
+    "3": "production / commercial experience"
+  },
+  "skills": [
+    {
+      "id": "python",
+      "name": "Python",
+      "group": "language",
+      "aliases": [
+        "python"
+      ]
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "group": "language",
+      "aliases": [
+        "typescript",
+        "ts"
+      ]
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "group": "language",
+      "aliases": [
+        "javascript",
+        "js"
+      ]
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "group": "backend",
+      "aliases": [
+        "node.js",
+        "nodejs",
+        "node"
+      ]
+    },
+    {
+      "id": "sql",
+      "name": "SQL",
+      "group": "data",
+      "aliases": [
+        "sql"
+      ]
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "group": "data",
+      "parent": "sql",
+      "aliases": [
+        "postgresql",
+        "postgres"
+      ]
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "group": "data",
+      "aliases": [
+        "mongodb",
+        "mongo"
+      ]
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "group": "data",
+      "aliases": [
+        "redis"
+      ]
+    },
+    {
+      "id": "pandas",
+      "name": "pandas",
+      "group": "data",
+      "aliases": [
+        "pandas"
+      ]
+    },
+    {
+      "id": "numpy",
+      "name": "NumPy",
+      "group": "data",
+      "aliases": [
+        "numpy"
+      ]
+    },
+    {
+      "id": "spark",
+      "name": "Apache Spark",
+      "group": "data-eng",
+      "aliases": [
+        "spark",
+        "pyspark",
+        "databricks"
+      ]
+    },
+    {
+      "id": "airflow",
+      "name": "Apache Airflow",
+      "group": "data-eng",
+      "aliases": [
+        "airflow"
+      ]
+    },
+    {
+      "id": "kafka",
+      "name": "Apache Kafka",
+      "group": "data-eng",
+      "aliases": [
+        "kafka"
+      ]
+    },
+    {
+      "id": "fastapi",
+      "name": "FastAPI",
+      "group": "backend",
+      "parent": "rest-api",
+      "aliases": [
+        "fastapi"
+      ]
+    },
+    {
+      "id": "flask",
+      "name": "Flask",
+      "group": "backend",
+      "parent": "rest-api",
+      "aliases": [
+        "flask"
+      ]
+    },
+    {
+      "id": "django",
+      "name": "Django",
+      "group": "backend",
+      "parent": "rest-api",
+      "aliases": [
+        "django"
+      ]
+    },
+    {
+      "id": "rest-api",
+      "name": "REST API",
+      "group": "backend",
+      "aliases": [
+        "rest api",
+        "restful",
+        "api design",
+        "api development",
+        "rest"
+      ]
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "group": "frontend",
+      "aliases": [
+        "react",
+        "react.js",
+        "reactjs"
+      ]
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "group": "devops",
+      "aliases": [
+        "git",
+        "github",
+        "gitlab"
+      ]
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "group": "devops",
+      "aliases": [
+        "docker",
+        "containerization",
+        "контейнеризація"
+      ]
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "group": "devops",
+      "aliases": [
+        "kubernetes",
+        "k8s"
+      ]
+    },
+    {
+      "id": "ci-cd",
+      "name": "CI/CD",
+      "group": "devops",
+      "aliases": [
+        "ci/cd",
+        "github actions",
+        "gitlab ci"
+      ]
+    },
+    {
+      "id": "terraform",
+      "name": "Terraform",
+      "group": "devops",
+      "aliases": [
+        "terraform",
+        "infrastructure as code",
+        "iac"
+      ]
+    },
+    {
+      "id": "linux",
+      "name": "Linux",
+      "group": "devops",
+      "aliases": [
+        "linux"
+      ]
+    },
+    {
+      "id": "observability",
+      "name": "Observability",
+      "group": "devops",
+      "aliases": [
+        "opentelemetry",
+        "grafana",
+        "prometheus",
+        "sentry",
+        "datadog"
+      ]
+    },
+    {
+      "id": "aws",
+      "name": "AWS",
+      "group": "cloud",
+      "aliases": [
+        "aws",
+        "amazon web services"
+      ]
+    },
+    {
+      "id": "aws-bedrock",
+      "name": "Amazon Bedrock",
+      "group": "cloud",
+      "parent": "aws",
+      "aliases": [
+        "bedrock",
+        "amazon bedrock",
+        "aws bedrock"
+      ]
+    },
+    {
+      "id": "aws-sagemaker",
+      "name": "Amazon SageMaker",
+      "group": "cloud",
+      "parent": "aws",
+      "aliases": [
+        "sagemaker"
+      ]
+    },
+    {
+      "id": "aws-lambda",
+      "name": "AWS Lambda",
+      "group": "cloud",
+      "parent": "aws",
+      "aliases": [
+        "lambda",
+        "aws lambda"
+      ]
+    },
+    {
+      "id": "aws-s3",
+      "name": "Amazon S3",
+      "group": "cloud",
+      "parent": "aws",
+      "aliases": [
+        "s3"
+      ]
+    },
+    {
+      "id": "aws-ecs",
+      "name": "Amazon ECS / Fargate",
+      "group": "cloud",
+      "parent": "aws",
+      "aliases": [
+        "ecs",
+        "fargate"
+      ]
+    },
+    {
+      "id": "aws-ec2",
+      "name": "Amazon EC2",
+      "group": "cloud",
+      "parent": "aws",
+      "aliases": [
+        "ec2"
+      ]
+    },
+    {
+      "id": "azure",
+      "name": "Microsoft Azure",
+      "group": "cloud",
+      "aliases": [
+        "azure"
+      ]
+    },
+    {
+      "id": "azure-openai",
+      "name": "Azure OpenAI / AI Foundry",
+      "group": "cloud",
+      "parent": "azure",
+      "aliases": [
+        "azure openai",
+        "ai foundry",
+        "azure foundry"
+      ]
+    },
+    {
+      "id": "gcp",
+      "name": "Google Cloud",
+      "group": "cloud",
+      "aliases": [
+        "gcp",
+        "google cloud"
+      ]
+    },
+    {
+      "id": "gcp-vertex",
+      "name": "Vertex AI",
+      "group": "cloud",
+      "parent": "gcp",
+      "aliases": [
+        "vertex",
+        "vertex ai"
+      ]
+    },
+    {
+      "id": "llm-api",
+      "name": "LLM API",
+      "group": "llm",
+      "aliases": [
+        "llm",
+        "llms",
+        "large language models",
+        "llm api"
+      ]
+    },
+    {
+      "id": "openai-api",
+      "name": "OpenAI API",
+      "group": "llm",
+      "parent": "llm-api",
+      "aliases": [
+        "openai",
+        "gpt",
+        "chatgpt api"
+      ]
+    },
+    {
+      "id": "anthropic-api",
+      "name": "Anthropic / Claude API",
+      "group": "llm",
+      "parent": "llm-api",
+      "aliases": [
+        "anthropic",
+        "claude api"
+      ]
+    },
+    {
+      "id": "gemini-api",
+      "name": "Gemini API",
+      "group": "llm",
+      "parent": "llm-api",
+      "aliases": [
+        "gemini"
+      ]
+    },
+    {
+      "id": "open-source-llm",
+      "name": "Open-source LLM",
+      "group": "llm",
+      "parent": "llm-api",
+      "aliases": [
+        "llama",
+        "mistral",
+        "qwen",
+        "ollama",
+        "lm studio"
+      ]
+    },
+    {
+      "id": "ai-coding-tools",
+      "name": "AI coding tools",
+      "group": "llm",
+      "aliases": [
+        "claude code",
+        "cursor",
+        "codex",
+        "copilot"
+      ]
+    },
+    {
+      "id": "prompt-engineering",
+      "name": "Prompt engineering",
+      "group": "llm",
+      "aliases": [
+        "prompt engineering",
+        "prompting",
+        "промпт"
+      ]
+    },
+    {
+      "id": "rag",
+      "name": "RAG",
+      "group": "llm",
+      "aliases": [
+        "rag",
+        "retrieval-augmented generation",
+        "retrieval augmented generation"
+      ]
+    },
+    {
+      "id": "embeddings",
+      "name": "Embeddings",
+      "group": "llm",
+      "aliases": [
+        "embeddings",
+        "embedding models",
+        "semantic search"
+      ]
+    },
+    {
+      "id": "vector-db",
+      "name": "Vector DB",
+      "group": "llm",
+      "aliases": [
+        "vector database",
+        "vector db",
+        "vector store",
+        "vector search"
+      ]
+    },
+    {
+      "id": "pgvector",
+      "name": "pgvector",
+      "group": "llm",
+      "parent": "vector-db",
+      "aliases": [
+        "pgvector"
+      ]
+    },
+    {
+      "id": "pinecone",
+      "name": "Pinecone",
+      "group": "llm",
+      "parent": "vector-db",
+      "aliases": [
+        "pinecone"
+      ]
+    },
+    {
+      "id": "qdrant",
+      "name": "Qdrant",
+      "group": "llm",
+      "parent": "vector-db",
+      "aliases": [
+        "qdrant"
+      ]
+    },
+    {
+      "id": "weaviate",
+      "name": "Weaviate",
+      "group": "llm",
+      "parent": "vector-db",
+      "aliases": [
+        "weaviate"
+      ]
+    },
+    {
+      "id": "faiss",
+      "name": "FAISS",
+      "group": "llm",
+      "parent": "vector-db",
+      "aliases": [
+        "faiss"
+      ]
+    },
+    {
+      "id": "opensearch",
+      "name": "Elasticsearch / OpenSearch",
+      "group": "llm",
+      "aliases": [
+        "elasticsearch",
+        "opensearch"
+      ]
+    },
+    {
+      "id": "ai-agents",
+      "name": "AI agents",
+      "group": "llm",
+      "aliases": [
+        "ai agents",
+        "agentic",
+        "llm agents",
+        "multi-agent",
+        "agent systems"
+      ]
+    },
+    {
+      "id": "langchain",
+      "name": "LangChain",
+      "group": "llm",
+      "aliases": [
+        "langchain"
+      ]
+    },
+    {
+      "id": "langgraph",
+      "name": "LangGraph",
+      "group": "llm",
+      "aliases": [
+        "langgraph"
+      ]
+    },
+    {
+      "id": "llamaindex",
+      "name": "LlamaIndex",
+      "group": "llm",
+      "aliases": [
+        "llamaindex",
+        "llama index"
+      ]
+    },
+    {
+      "id": "mcp",
+      "name": "MCP",
+      "group": "llm",
+      "aliases": [
+        "mcp",
+        "model context protocol"
+      ]
+    },
+    {
+      "id": "llm-evals",
+      "name": "LLM evals",
+      "group": "llm",
+      "aliases": [
+        "evals",
+        "llm evaluation",
+        "langsmith",
+        "langfuse",
+        "ragas"
+      ]
+    },
+    {
+      "id": "fine-tuning",
+      "name": "Fine-tuning",
+      "group": "llm",
+      "aliases": [
+        "fine-tuning",
+        "finetuning",
+        "fine tuning"
+      ]
+    },
+    {
+      "id": "lora",
+      "name": "LoRA / PEFT",
+      "group": "llm",
+      "parent": "fine-tuning",
+      "aliases": [
+        "lora",
+        "qlora",
+        "peft"
+      ]
+    },
+    {
+      "id": "pytorch",
+      "name": "PyTorch",
+      "group": "ml",
+      "aliases": [
+        "pytorch",
+        "torch"
+      ]
+    },
+    {
+      "id": "tensorflow",
+      "name": "TensorFlow / Keras",
+      "group": "ml",
+      "aliases": [
+        "tensorflow",
+        "keras"
+      ]
+    },
+    {
+      "id": "scikit-learn",
+      "name": "scikit-learn",
+      "group": "ml",
+      "aliases": [
+        "scikit-learn",
+        "sklearn"
+      ]
+    },
+    {
+      "id": "gradient-boosting",
+      "name": "Gradient boosting",
+      "group": "ml",
+      "aliases": [
+        "xgboost",
+        "lightgbm",
+        "catboost",
+        "gradient boosting"
+      ]
+    },
+    {
+      "id": "hugging-face",
+      "name": "Hugging Face",
+      "group": "ml",
+      "aliases": [
+        "hugging face",
+        "huggingface",
+        "transformers"
+      ]
+    },
+    {
+      "id": "mlops",
+      "name": "MLOps",
+      "group": "ml",
+      "aliases": [
+        "mlops",
+        "llmops"
+      ]
+    },
+    {
+      "id": "mlflow",
+      "name": "MLflow",
+      "group": "ml",
+      "parent": "mlops",
+      "aliases": [
+        "mlflow"
+      ]
+    },
+    {
+      "id": "model-inference",
+      "name": "Model inference / serving",
+      "group": "ml",
+      "aliases": [
+        "triton",
+        "vllm",
+        "tensorrt",
+        "onnx",
+        "model serving"
+      ]
+    },
+    {
+      "id": "cuda",
+      "name": "CUDA / GPU",
+      "group": "ml",
+      "aliases": [
+        "cuda",
+        "gpu"
+      ]
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics",
+      "group": "ml",
+      "aliases": [
+        "statistics",
+        "probability",
+        "статистика"
+      ]
+    },
+    {
+      "id": "ab-testing",
+      "name": "A/B testing",
+      "group": "ml",
+      "aliases": [
+        "a/b testing",
+        "ab testing",
+        "a/b tests"
+      ]
+    },
+    {
+      "id": "time-series",
+      "name": "Time series",
+      "group": "ml",
+      "aliases": [
+        "time series",
+        "forecasting"
+      ]
+    },
+    {
+      "id": "recommender-systems",
+      "name": "Recommender systems",
+      "group": "ml",
+      "aliases": [
+        "recommender systems",
+        "recommendation systems"
+      ]
+    },
+    {
+      "id": "computer-vision",
+      "name": "Computer Vision",
+      "group": "cv",
+      "aliases": [
+        "computer vision",
+        "object detection",
+        "image segmentation",
+        "image processing"
+      ]
+    },
+    {
+      "id": "opencv",
+      "name": "OpenCV",
+      "group": "cv",
+      "parent": "computer-vision",
+      "aliases": [
+        "opencv"
+      ]
+    },
+    {
+      "id": "yolo",
+      "name": "YOLO",
+      "group": "cv",
+      "parent": "computer-vision",
+      "aliases": [
+        "yolo"
+      ]
+    },
+    {
+      "id": "nlp",
+      "name": "NLP",
+      "group": "nlp-speech",
+      "aliases": [
+        "nlp",
+        "natural language processing"
+      ]
+    },
+    {
+      "id": "speech",
+      "name": "Speech (ASR / TTS)",
+      "group": "nlp-speech",
+      "aliases": [
+        "asr",
+        "tts",
+        "speech recognition",
+        "whisper"
+      ]
+    },
+    {
+      "id": "dotnet",
+      "name": ".NET",
+      "group": "backend",
+      "aliases": [
+        ".net",
+        "dotnet",
+        ".net framework",
+        ".net framework 4.8",
+        "c# / .net",
+        "c# and .net",
+        ".net core"
+      ]
+    },
+    {
+      "id": "abap",
+      "name": "ABAP",
+      "group": "erp",
+      "aliases": [
+        "abap"
+      ]
+    },
+    {
+      "id": "active-directory",
+      "name": "Active Directory",
+      "group": "sysadmin",
+      "aliases": [
+        "active directory",
+        "ad",
+        "microsoft active directory"
+      ]
+    },
+    {
+      "id": "adobe-photoshop",
+      "name": "Adobe Photoshop",
+      "group": "frontend",
+      "aliases": [
+        "adobe photoshop",
+        "photoshop"
+      ]
+    },
+    {
+      "id": "after-effects",
+      "name": "Adobe After Effects",
+      "group": "frontend",
+      "aliases": [
+        "after effects",
+        "adobe after effects"
+      ]
+    },
+    {
+      "id": "agentforce",
+      "name": "Agentforce",
+      "group": "llm",
+      "aliases": [
+        "agentforce"
+      ]
+    },
+    {
+      "id": "ai-governance",
+      "name": "AI Governance",
+      "group": "ml",
+      "aliases": [
+        "ai governance",
+        "ai ethics",
+        "responsible ai"
+      ]
+    },
+    {
+      "id": "algorithms-data-structures",
+      "name": "Algorithms & Data Structures",
+      "group": "backend",
+      "aliases": [
+        "algorithms and data structures",
+        "data structures and algorithms",
+        "dsa",
+        "algorithms & data structures"
+      ]
+    },
+    {
+      "id": "altium-designer",
+      "name": "Altium Designer",
+      "group": "embedded",
+      "aliases": [
+        "altium designer",
+        "altium"
+      ]
+    },
+    {
+      "id": "android",
+      "name": "Android",
+      "group": "mobile",
+      "aliases": [
+        "android"
+      ]
+    },
+    {
+      "id": "android-studio",
+      "name": "Android Studio",
+      "group": "mobile",
+      "aliases": [
+        "android studio"
+      ]
+    },
+    {
+      "id": "angular",
+      "name": "Angular",
+      "group": "frontend",
+      "aliases": [
+        "angular",
+        "angularjs"
+      ]
+    },
+    {
+      "id": "ansible",
+      "name": "Ansible",
+      "group": "devops",
+      "aliases": [
+        "ansible"
+      ]
+    },
+    {
+      "id": "api-gateway",
+      "name": "API Gateway",
+      "group": "backend",
+      "aliases": [
+        "api gateway"
+      ]
+    },
+    {
+      "id": "api-security",
+      "name": "API Security",
+      "group": "security",
+      "aliases": [
+        "api security"
+      ]
+    },
+    {
+      "id": "api-testing",
+      "name": "API Testing",
+      "group": "testing",
+      "aliases": [
+        "api testing"
+      ]
+    },
+    {
+      "id": "appium",
+      "name": "Appium",
+      "group": "testing",
+      "aliases": [
+        "appium"
+      ]
+    },
+    {
+      "id": "azure-application-insights",
+      "name": "Azure Application Insights",
+      "group": "cloud",
+      "aliases": [
+        "application insights",
+        "azure application insights"
+      ]
+    },
+    {
+      "id": "arduino",
+      "name": "Arduino",
+      "group": "embedded",
+      "aliases": [
+        "arduino"
+      ]
+    },
+    {
+      "id": "ardupilot",
+      "name": "ArduPilot",
+      "group": "embedded",
+      "aliases": [
+        "ardupilot",
+        "ardupilot / px4",
+        "ardupilot, inav, mavlink"
+      ]
+    },
+    {
+      "id": "argocd",
+      "name": "Argo CD",
+      "group": "devops",
+      "aliases": [
+        "argocd",
+        "argo cd"
+      ]
+    },
+    {
+      "id": "aspnet-core",
+      "name": "ASP.NET Core",
+      "group": "backend",
+      "aliases": [
+        "asp.net core",
+        "asp.net mvc",
+        "asp.net"
+      ]
+    },
+    {
+      "id": "asterisk",
+      "name": "Asterisk",
+      "group": "backend",
+      "aliases": [
+        "asterisk"
+      ]
+    },
+    {
+      "id": "asyncio",
+      "name": "asyncio",
+      "group": "backend",
+      "aliases": [
+        "asyncio",
+        "asynchronous programming",
+        "async/await"
+      ]
+    },
+    {
+      "id": "autogen",
+      "name": "AutoGen",
+      "group": "llm",
+      "aliases": [
+        "autogen",
+        "microsoft autogen"
+      ]
+    },
+    {
+      "id": "automated-testing",
+      "name": "Automated Testing",
+      "group": "testing",
+      "aliases": [
+        "automated testing",
+        "test automation",
+        "test automatization"
+      ]
+    },
+    {
+      "id": "aws-cdk",
+      "name": "AWS CDK",
+      "group": "cloud",
+      "aliases": [
+        "aws cdk",
+        "cdk"
+      ]
+    },
+    {
+      "id": "aws-glue",
+      "name": "AWS Glue",
+      "group": "cloud",
+      "aliases": [
+        "aws glue",
+        "glue"
+      ]
+    },
+    {
+      "id": "aws-rds",
+      "name": "AWS RDS",
+      "group": "cloud",
+      "aliases": [
+        "aws rds",
+        "rds",
+        "amazon rds"
+      ]
+    },
+    {
+      "id": "aws-step-functions",
+      "name": "AWS Step Functions",
+      "group": "cloud",
+      "aliases": [
+        "aws step functions",
+        "step functions"
+      ]
+    },
+    {
+      "id": "azure-ai-search",
+      "name": "Azure AI Search",
+      "group": "cloud",
+      "aliases": [
+        "azure ai search",
+        "azure cognitive search"
+      ]
+    },
+    {
+      "id": "azure-container-apps",
+      "name": "Azure Container Apps",
+      "group": "cloud",
+      "aliases": [
+        "azure container apps"
+      ]
+    },
+    {
+      "id": "azure-data-factory",
+      "name": "Azure Data Factory",
+      "group": "cloud",
+      "aliases": [
+        "azure data factory",
+        "adf"
+      ]
+    },
+    {
+      "id": "azure-data-lake",
+      "name": "Azure Data Lake Storage",
+      "group": "cloud",
+      "aliases": [
+        "azure data lake storage",
+        "adls",
+        "azure data lake"
+      ]
+    },
+    {
+      "id": "azure-databricks",
+      "name": "Azure Databricks",
+      "group": "cloud",
+      "aliases": [
+        "azure databricks"
+      ]
+    },
+    {
+      "id": "azure-devops",
+      "name": "Azure DevOps",
+      "group": "devops",
+      "aliases": [
+        "azure devops"
+      ]
+    },
+    {
+      "id": "azure-functions",
+      "name": "Azure Functions",
+      "group": "cloud",
+      "aliases": [
+        "azure functions"
+      ]
+    },
+    {
+      "id": "azure-key-vault",
+      "name": "Azure Key Vault",
+      "group": "cloud",
+      "aliases": [
+        "azure key vault",
+        "key vault"
+      ]
+    },
+    {
+      "id": "azure-monitor",
+      "name": "Azure Monitor",
+      "group": "cloud",
+      "aliases": [
+        "azure monitor"
+      ]
+    },
+    {
+      "id": "azure-service-bus",
+      "name": "Azure Service Bus",
+      "group": "cloud",
+      "aliases": [
+        "azure service bus",
+        "service bus"
+      ]
+    },
+    {
+      "id": "azure-sql",
+      "name": "Azure SQL",
+      "group": "cloud",
+      "aliases": [
+        "azure sql"
+      ]
+    },
+    {
+      "id": "azure-synapse",
+      "name": "Azure Synapse Analytics",
+      "group": "cloud",
+      "aliases": [
+        "azure synapse analytics",
+        "azure synapse"
+      ]
+    },
+    {
+      "id": "bash",
+      "name": "Bash",
+      "group": "devops",
+      "aliases": [
+        "bash",
+        "bash scripting",
+        "shell scripting",
+        "shell",
+        "sh scripting"
+      ]
+    },
+    {
+      "id": "betaflight",
+      "name": "Betaflight",
+      "group": "embedded",
+      "aliases": [
+        "betaflight"
+      ]
+    },
+    {
+      "id": "bicep",
+      "name": "Bicep",
+      "group": "cloud",
+      "aliases": [
+        "bicep",
+        "azure bicep"
+      ]
+    },
+    {
+      "id": "bigquery",
+      "name": "BigQuery",
+      "group": "data",
+      "aliases": [
+        "bigquery",
+        "google bigquery"
+      ]
+    },
+    {
+      "id": "blender",
+      "name": "Blender",
+      "group": "gamedev",
+      "aliases": [
+        "blender"
+      ]
+    },
+    {
+      "id": "bloc",
+      "name": "BLoC",
+      "group": "mobile",
+      "aliases": [
+        "bloc",
+        "flutter bloc"
+      ]
+    },
+    {
+      "id": "browserstack",
+      "name": "BrowserStack",
+      "group": "testing",
+      "aliases": [
+        "browserstack"
+      ]
+    },
+    {
+      "id": "bug-bounty",
+      "name": "Bug Bounty",
+      "group": "security",
+      "aliases": [
+        "bug bounty",
+        "bug bounty programs"
+      ]
+    },
+    {
+      "id": "buildroot",
+      "name": "Buildroot",
+      "group": "embedded",
+      "aliases": [
+        "buildroot"
+      ]
+    },
+    {
+      "id": "bullmq",
+      "name": "BullMQ",
+      "group": "backend",
+      "aliases": [
+        "bullmq",
+        "bull mq"
+      ]
+    },
+    {
+      "id": "burp-suite",
+      "name": "Burp Suite",
+      "group": "security",
+      "aliases": [
+        "burp suite",
+        "burpsuite"
+      ]
+    },
+    {
+      "id": "bitbucket-pipelines",
+      "name": "Bitbucket Pipelines",
+      "group": "devops",
+      "aliases": [
+        "bitbucket pipelines",
+        "bitbucket"
+      ]
+    },
+    {
+      "id": "inav",
+      "name": "iNav",
+      "group": "embedded",
+      "aliases": [
+        "inav"
+      ]
+    },
+    {
+      "id": "mavlink",
+      "name": "MAVLink",
+      "group": "embedded",
+      "aliases": [
+        "mavlink",
+        "mavlink protocol"
+      ]
+    },
+    {
+      "id": "px4",
+      "name": "PX4",
+      "group": "embedded",
+      "aliases": [
+        "px4",
+        "px4 autopilot"
+      ]
+    },
+    {
+      "id": "asap-methodology",
+      "name": "ASAP Methodology",
+      "group": "erp",
+      "aliases": [
+        "asap methodology",
+        "asap"
+      ]
+    },
+    {
+      "id": "browserify",
+      "name": "Browserify",
+      "group": "frontend",
+      "aliases": [
+        "browserify"
+      ]
+    },
+    {
+      "id": "cpp",
+      "name": "C++",
+      "group": "language",
+      "aliases": [
+        "c++",
+        "c/c++",
+        "c / c++",
+        "c/c++ programming",
+        "c/c++ для вбудованих систем"
+      ]
+    },
+    {
+      "id": "c-lang",
+      "name": "C",
+      "group": "language",
+      "aliases": [
+        "c programming language",
+        "c language",
+        "c"
+      ]
+    },
+    {
+      "id": "c-sharp",
+      "name": "C#",
+      "group": "language",
+      "aliases": [
+        "c#",
+        "csharp"
+      ]
+    },
+    {
+      "id": "camera-calibration",
+      "name": "Camera Calibration",
+      "group": "cv",
+      "aliases": [
+        "camera calibration"
+      ]
+    },
+    {
+      "id": "can-bus",
+      "name": "CAN Bus",
+      "group": "embedded",
+      "aliases": [
+        "can",
+        "can bus",
+        "can protocol"
+      ]
+    },
+    {
+      "id": "cassandra",
+      "name": "Apache Cassandra",
+      "group": "database",
+      "aliases": [
+        "cassandra",
+        "apache cassandra"
+      ]
+    },
+    {
+      "id": "cdc",
+      "name": "Change Data Capture",
+      "group": "data-eng",
+      "aliases": [
+        "cdc",
+        "change data capture",
+        "cdc (change data capture)"
+      ]
+    },
+    {
+      "id": "celery",
+      "name": "Celery",
+      "group": "backend",
+      "aliases": [
+        "celery"
+      ]
+    },
+    {
+      "id": "ceph",
+      "name": "Ceph",
+      "group": "devops",
+      "aliases": [
+        "ceph"
+      ]
+    },
+    {
+      "id": "cert-manager",
+      "name": "cert-manager",
+      "group": "devops",
+      "aliases": [
+        "cert-manager"
+      ]
+    },
+    {
+      "id": "charles-proxy",
+      "name": "Charles Proxy",
+      "group": "testing",
+      "aliases": [
+        "charles proxy",
+        "charles"
+      ]
+    },
+    {
+      "id": "chrome-devtools",
+      "name": "Chrome DevTools",
+      "group": "testing",
+      "aliases": [
+        "chrome devtools",
+        "devtools",
+        "browser devtools"
+      ]
+    },
+    {
+      "id": "circleci",
+      "name": "CircleCI",
+      "group": "devops",
+      "aliases": [
+        "circleci"
+      ]
+    },
+    {
+      "id": "cis-controls",
+      "name": "CIS Controls",
+      "group": "security",
+      "aliases": [
+        "cis controls",
+        "cis benchmarks"
+      ]
+    },
+    {
+      "id": "claude-agent-sdk",
+      "name": "Claude Agent SDK",
+      "group": "llm",
+      "aliases": [
+        "claude agent sdk",
+        "anthropic agent sdk"
+      ]
+    },
+    {
+      "id": "clean-architecture",
+      "name": "Clean Architecture",
+      "group": "architecture",
+      "aliases": [
+        "clean architecture"
+      ]
+    },
+    {
+      "id": "clickhouse",
+      "name": "ClickHouse",
+      "group": "database",
+      "aliases": [
+        "clickhouse",
+        "clickhouse (columnar database)"
+      ]
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "group": "devops",
+      "aliases": [
+        "cloudflare"
+      ]
+    },
+    {
+      "id": "cloudformation",
+      "name": "AWS CloudFormation",
+      "group": "cloud",
+      "aliases": [
+        "cloudformation",
+        "aws cloudformation"
+      ]
+    },
+    {
+      "id": "cloudfront",
+      "name": "AWS CloudFront",
+      "group": "cloud",
+      "aliases": [
+        "cloudfront",
+        "aws cloudfront"
+      ]
+    },
+    {
+      "id": "cloudwatch",
+      "name": "AWS CloudWatch",
+      "group": "cloud",
+      "aliases": [
+        "cloudwatch",
+        "aws cloudwatch"
+      ]
+    },
+    {
+      "id": "cmake",
+      "name": "CMake",
+      "group": "embedded",
+      "aliases": [
+        "cmake"
+      ]
+    },
+    {
+      "id": "confluence",
+      "name": "Confluence",
+      "group": "sysadmin",
+      "aliases": [
+        "confluence",
+        "atlassian confluence"
+      ]
+    },
+    {
+      "id": "copilot-studio",
+      "name": "Microsoft Copilot Studio",
+      "group": "llm",
+      "aliases": [
+        "copilot studio",
+        "microsoft copilot studio"
+      ]
+    },
+    {
+      "id": "core-web-vitals",
+      "name": "Core Web Vitals",
+      "group": "frontend",
+      "aliases": [
+        "core web vitals"
+      ]
+    },
+    {
+      "id": "coroutines",
+      "name": "Coroutines",
+      "group": "backend",
+      "aliases": [
+        "coroutines",
+        "kotlin coroutines"
+      ]
+    },
+    {
+      "id": "cqrs",
+      "name": "CQRS",
+      "group": "architecture",
+      "aliases": [
+        "cqrs",
+        "command query responsibility segregation"
+      ]
+    },
+    {
+      "id": "crewai",
+      "name": "CrewAI",
+      "group": "llm",
+      "aliases": [
+        "crewai",
+        "crew ai"
+      ]
+    },
+    {
+      "id": "cryptography",
+      "name": "Cryptography",
+      "group": "security",
+      "aliases": [
+        "cryptography",
+        "encryption",
+        "pki",
+        "public key infrastructure",
+        "microsoft pki"
+      ]
+    },
+    {
+      "id": "css",
+      "name": "CSS",
+      "group": "frontend",
+      "aliases": [
+        "css",
+        "css3",
+        "html",
+        "html5",
+        "html, css",
+        "html/css",
+        "html5, css3",
+        "html5/css3"
+      ]
+    },
+    {
+      "id": "cypress",
+      "name": "Cypress",
+      "group": "testing",
+      "aliases": [
+        "cypress"
+      ]
+    },
+    {
+      "id": "dagster",
+      "name": "Dagster",
+      "group": "data-eng",
+      "aliases": [
+        "dagster"
+      ]
+    },
+    {
+      "id": "dapper",
+      "name": "Dapper",
+      "group": "backend",
+      "aliases": [
+        "dapper"
+      ]
+    },
+    {
+      "id": "dast",
+      "name": "DAST",
+      "group": "security",
+      "aliases": [
+        "dast",
+        "dynamic application security testing",
+        "dast (dynamic application security testing)"
+      ]
+    },
+    {
+      "id": "data-governance",
+      "name": "Data Governance",
+      "group": "data",
+      "aliases": [
+        "data governance"
+      ]
+    },
+    {
+      "id": "data-modeling",
+      "name": "Data Modeling",
+      "group": "data",
+      "aliases": [
+        "data modeling",
+        "data modelling"
+      ]
+    },
+    {
+      "id": "data-quality",
+      "name": "Data Quality",
+      "group": "data",
+      "aliases": [
+        "data quality"
+      ]
+    },
+    {
+      "id": "dataverse",
+      "name": "Microsoft Dataverse",
+      "group": "cloud",
+      "aliases": [
+        "dataverse",
+        "microsoft dataverse"
+      ]
+    },
+    {
+      "id": "dbt",
+      "name": "dbt",
+      "group": "data-eng",
+      "aliases": [
+        "dbt",
+        "dbt (data build tool)",
+        "data build tool"
+      ]
+    },
+    {
+      "id": "defender-for-cloud",
+      "name": "Microsoft Defender for Cloud",
+      "group": "security",
+      "aliases": [
+        "defender for cloud",
+        "microsoft defender for cloud"
+      ]
+    },
+    {
+      "id": "delta-lake",
+      "name": "Delta Lake",
+      "group": "data-eng",
+      "aliases": [
+        "delta lake"
+      ]
+    },
+    {
+      "id": "dependency-injection",
+      "name": "Dependency Injection",
+      "group": "architecture",
+      "aliases": [
+        "dependency injection",
+        "di",
+        "ioc"
+      ]
+    },
+    {
+      "id": "design-patterns",
+      "name": "Design Patterns",
+      "group": "architecture",
+      "aliases": [
+        "design patterns",
+        "gof patterns"
+      ]
+    },
+    {
+      "id": "devsecops",
+      "name": "DevSecOps",
+      "group": "security",
+      "aliases": [
+        "devsecops",
+        "devsecops practices"
+      ]
+    },
+    {
+      "id": "dhcp",
+      "name": "DHCP",
+      "group": "sysadmin",
+      "aliases": [
+        "dhcp"
+      ]
+    },
+    {
+      "id": "distributed-systems",
+      "name": "Distributed Systems",
+      "group": "architecture",
+      "aliases": [
+        "distributed systems",
+        "distributed computing"
+      ]
+    },
+    {
+      "id": "dlp",
+      "name": "DLP",
+      "group": "security",
+      "aliases": [
+        "dlp",
+        "dlp (data loss prevention)",
+        "data loss prevention"
+      ]
+    },
+    {
+      "id": "dns",
+      "name": "DNS",
+      "group": "sysadmin",
+      "aliases": [
+        "dns",
+        "domain name system"
+      ]
+    },
+    {
+      "id": "ddd",
+      "name": "Domain-Driven Design",
+      "group": "architecture",
+      "aliases": [
+        "ddd",
+        "domain-driven design",
+        "domain-driven design (ddd)",
+        "domain driven design"
+      ]
+    },
+    {
+      "id": "dvc",
+      "name": "DVC",
+      "group": "ml",
+      "aliases": [
+        "dvc",
+        "data version control"
+      ]
+    },
+    {
+      "id": "dynamodb",
+      "name": "DynamoDB",
+      "group": "database",
+      "aliases": [
+        "dynamodb",
+        "aws dynamodb",
+        "amazon dynamodb"
+      ]
+    },
+    {
+      "id": "edr-xdr",
+      "name": "EDR/XDR",
+      "group": "security",
+      "aliases": [
+        "edr",
+        "xdr",
+        "edr/xdr",
+        "endpoint detection and response",
+        "extended detection and response",
+        "edr (endpoint detection and response)",
+        "edr/xdr (endpoint detection and response / extended detection and response)"
+      ]
+    },
+    {
+      "id": "aws-eks",
+      "name": "Amazon EKS",
+      "group": "cloud",
+      "aliases": [
+        "eks",
+        "aws eks",
+        "amazon eks",
+        "elastic kubernetes service"
+      ]
+    },
+    {
+      "id": "elk-stack",
+      "name": "ELK Stack",
+      "group": "devops",
+      "aliases": [
+        "elk",
+        "elk stack",
+        "elastic stack",
+        "logstash",
+        "kibana"
+      ]
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "group": "nlp-speech",
+      "aliases": [
+        "elevenlabs",
+        "eleven labs"
+      ]
+    },
+    {
+      "id": "embedded-systems",
+      "name": "Embedded Systems",
+      "group": "embedded",
+      "aliases": [
+        "embedded systems",
+        "embedded development",
+        "embedded software"
+      ]
+    },
+    {
+      "id": "embedded-c-cpp",
+      "name": "Embedded C/C++",
+      "group": "embedded",
+      "aliases": [
+        "embedded c/c++",
+        "embedded c",
+        "embedded c++"
+      ]
+    },
+    {
+      "id": "embedded-testing",
+      "name": "Embedded Systems Testing",
+      "group": "embedded",
+      "aliases": [
+        "embedded systems testing",
+        "embedded testing"
+      ]
+    },
+    {
+      "id": "entity-framework",
+      "name": "Entity Framework",
+      "group": "backend",
+      "aliases": [
+        "entity framework",
+        "entity framework core",
+        "ef core",
+        "ef"
+      ]
+    },
+    {
+      "id": "entra-id",
+      "name": "Microsoft Entra ID",
+      "group": "sysadmin",
+      "aliases": [
+        "entra id",
+        "microsoft entra id",
+        "azure active directory",
+        "azure ad",
+        "entra"
+      ]
+    },
+    {
+      "id": "eslint",
+      "name": "ESLint",
+      "group": "frontend",
+      "aliases": [
+        "eslint"
+      ]
+    },
+    {
+      "id": "esp32",
+      "name": "ESP32",
+      "group": "embedded",
+      "aliases": [
+        "esp32",
+        "esp8266",
+        "espressif"
+      ]
+    },
+    {
+      "id": "etl-elt",
+      "name": "ETL/ELT Pipelines",
+      "group": "data-eng",
+      "aliases": [
+        "etl/elt pipelines",
+        "etl/elt processes",
+        "etl",
+        "elt",
+        "etl pipelines",
+        "elt pipelines"
+      ]
+    },
+    {
+      "id": "event-sourcing",
+      "name": "Event Sourcing",
+      "group": "architecture",
+      "aliases": [
+        "event sourcing"
+      ]
+    },
+    {
+      "id": "event-driven-architecture",
+      "name": "Event-Driven Architecture",
+      "group": "architecture",
+      "aliases": [
+        "event-driven architecture",
+        "event-driven systems",
+        "eda",
+        "event driven architecture"
+      ]
+    },
+    {
+      "id": "exchange-online",
+      "name": "Exchange Online",
+      "group": "sysadmin",
+      "aliases": [
+        "exchange online",
+        "microsoft exchange online",
+        "exchange server"
+      ]
+    },
+    {
+      "id": "expo",
+      "name": "Expo",
+      "group": "mobile",
+      "aliases": [
+        "expo",
+        "expo go",
+        "expo sdk"
+      ]
+    },
+    {
+      "id": "expressjs",
+      "name": "Express.js",
+      "group": "backend",
+      "aliases": [
+        "express",
+        "express.js",
+        "expressjs"
+      ]
+    },
+    {
+      "id": "fastlane",
+      "name": "Fastlane",
+      "group": "mobile",
+      "aliases": [
+        "fastlane"
+      ]
+    },
+    {
+      "id": "ffmpeg",
+      "name": "FFmpeg",
+      "group": "backend",
+      "aliases": [
+        "ffmpeg"
+      ]
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "group": "frontend",
+      "aliases": [
+        "figma"
+      ]
+    },
+    {
+      "id": "finops",
+      "name": "FinOps",
+      "group": "cloud",
+      "aliases": [
+        "finops",
+        "cloud cost management",
+        "cloud cost optimization"
+      ]
+    },
+    {
+      "id": "firebase",
+      "name": "Firebase",
+      "group": "backend",
+      "aliases": [
+        "firebase",
+        "google firebase",
+        "firestore",
+        "firebase realtime database"
+      ]
+    },
+    {
+      "id": "firmware-development",
+      "name": "Firmware Development",
+      "group": "embedded",
+      "aliases": [
+        "firmware development",
+        "firmware",
+        "firmware engineering"
+      ]
+    },
+    {
+      "id": "flutter",
+      "name": "Flutter",
+      "group": "mobile",
+      "aliases": [
+        "flutter"
+      ]
+    },
+    {
+      "id": "gitops",
+      "name": "GitOps",
+      "group": "devops",
+      "aliases": [
+        "gitops",
+        "git ops"
+      ]
+    },
+    {
+      "id": "flux",
+      "name": "Flux",
+      "group": "devops",
+      "aliases": [
+        "flux",
+        "fluxcd",
+        "flux cd"
+      ]
+    },
+    {
+      "id": "fpga",
+      "name": "FPGA",
+      "group": "embedded",
+      "aliases": [
+        "fpga",
+        "field programmable gate array",
+        "fpga development"
+      ]
+    },
+    {
+      "id": "freertos",
+      "name": "FreeRTOS",
+      "group": "embedded",
+      "aliases": [
+        "freertos",
+        "rtos",
+        "real-time operating system",
+        "freertos or other rtos",
+        "real-time systems",
+        "real time systems",
+        "rtos (real-time operating system)"
+      ]
+    },
+    {
+      "id": "gdb",
+      "name": "GDB",
+      "group": "embedded",
+      "aliases": [
+        "gdb",
+        "gnu debugger"
+      ]
+    },
+    {
+      "id": "gdpr",
+      "name": "GDPR",
+      "group": "security",
+      "aliases": [
+        "gdpr",
+        "gdpr compliance",
+        "general data protection regulation"
+      ]
+    },
+    {
+      "id": "golang",
+      "name": "Go",
+      "group": "language",
+      "aliases": [
+        "go",
+        "golang",
+        "go (golang)",
+        "go programming language"
+      ]
+    },
+    {
+      "id": "google-workspace",
+      "name": "Google Workspace",
+      "group": "sysadmin",
+      "aliases": [
+        "google workspace",
+        "google workspace administration",
+        "g suite",
+        "gsuite"
+      ]
+    },
+    {
+      "id": "gradle",
+      "name": "Gradle",
+      "group": "devops",
+      "aliases": [
+        "gradle"
+      ]
+    },
+    {
+      "id": "graphql",
+      "name": "GraphQL",
+      "group": "backend",
+      "aliases": [
+        "graphql"
+      ]
+    },
+    {
+      "id": "graphrag",
+      "name": "GraphRAG",
+      "group": "llm",
+      "aliases": [
+        "graphrag",
+        "graph rag",
+        "graph-based rag"
+      ]
+    },
+    {
+      "id": "groovy",
+      "name": "Groovy",
+      "group": "language",
+      "aliases": [
+        "groovy"
+      ]
+    },
+    {
+      "id": "group-policy",
+      "name": "Group Policy",
+      "group": "sysadmin",
+      "aliases": [
+        "group policy",
+        "gpo",
+        "group policy object"
+      ]
+    },
+    {
+      "id": "grpc",
+      "name": "gRPC",
+      "group": "backend",
+      "aliases": [
+        "grpc",
+        "grpc api",
+        "protocol buffers",
+        "protobuf",
+        "proto"
+      ]
+    },
+    {
+      "id": "gsap",
+      "name": "GSAP",
+      "group": "frontend",
+      "aliases": [
+        "gsap",
+        "greensock",
+        "greensock animation platform"
+      ]
+    },
+    {
+      "id": "gstreamer",
+      "name": "GStreamer",
+      "group": "embedded",
+      "aliases": [
+        "gstreamer"
+      ]
+    },
+    {
+      "id": "guardrails",
+      "name": "Guardrails",
+      "group": "llm",
+      "aliases": [
+        "guardrails",
+        "guardrails ai",
+        "llm guardrails",
+        "nemo guardrails"
+      ]
+    },
+    {
+      "id": "gulp",
+      "name": "Gulp",
+      "group": "frontend",
+      "aliases": [
+        "gulp",
+        "gulpjs",
+        "gulp.js"
+      ]
+    },
+    {
+      "id": "gnu-radio",
+      "name": "GNU Radio",
+      "group": "embedded",
+      "aliases": [
+        "gnu radio",
+        "gnuradio"
+      ]
+    },
+    {
+      "id": "hangfire",
+      "name": "Hangfire",
+      "group": "backend",
+      "aliases": [
+        "hangfire"
+      ]
+    },
+    {
+      "id": "haproxy",
+      "name": "HAProxy",
+      "group": "devops",
+      "aliases": [
+        "haproxy"
+      ]
+    },
+    {
+      "id": "hashicorp-vault",
+      "name": "HashiCorp Vault",
+      "group": "devops",
+      "aliases": [
+        "hashicorp vault",
+        "vault",
+        "secrets management"
+      ]
+    },
+    {
+      "id": "helm",
+      "name": "Helm",
+      "group": "devops",
+      "aliases": [
+        "helm",
+        "helm charts"
+      ]
+    },
+    {
+      "id": "hexagonal-architecture",
+      "name": "Hexagonal Architecture",
+      "group": "architecture",
+      "aliases": [
+        "hexagonal architecture",
+        "ports and adapters"
+      ]
+    },
+    {
+      "id": "http",
+      "name": "HTTP/HTTPS",
+      "group": "backend",
+      "aliases": [
+        "http",
+        "https",
+        "http/https"
+      ]
+    },
+    {
+      "id": "i2c",
+      "name": "I2C",
+      "group": "embedded",
+      "aliases": [
+        "i2c",
+        "i²c"
+      ]
+    },
+    {
+      "id": "iam",
+      "name": "Identity and Access Management",
+      "group": "security",
+      "aliases": [
+        "iam",
+        "identity and access management",
+        "iam (identity and access management)",
+        "identity and access management (iam)"
+      ]
+    },
+    {
+      "id": "ids-ips",
+      "name": "IDS/IPS",
+      "group": "security",
+      "aliases": [
+        "ids/ips",
+        "ids",
+        "ips",
+        "intrusion detection",
+        "intrusion prevention"
+      ]
+    },
+    {
+      "id": "incident-response",
+      "name": "Incident Response",
+      "group": "security",
+      "aliases": [
+        "incident response",
+        "incident management"
+      ]
+    },
+    {
+      "id": "ios",
+      "name": "iOS",
+      "group": "mobile",
+      "aliases": [
+        "ios"
+      ]
+    },
+    {
+      "id": "iso-27001",
+      "name": "ISO 27001",
+      "group": "security",
+      "aliases": [
+        "iso 27001",
+        "iso/iec 27001"
+      ]
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "group": "language",
+      "aliases": [
+        "java"
+      ]
+    },
+    {
+      "id": "jenkins",
+      "name": "Jenkins",
+      "group": "devops",
+      "aliases": [
+        "jenkins"
+      ]
+    },
+    {
+      "id": "jest",
+      "name": "Jest",
+      "group": "testing",
+      "parent": "unit-testing",
+      "aliases": [
+        "jest"
+      ]
+    },
+    {
+      "id": "jetpack-compose",
+      "name": "Jetpack Compose",
+      "group": "mobile",
+      "aliases": [
+        "jetpack compose",
+        "jetpack-compose"
+      ]
+    },
+    {
+      "id": "jira",
+      "name": "Jira",
+      "group": "devops",
+      "aliases": [
+        "jira",
+        "atlassian jira"
+      ]
+    },
+    {
+      "id": "jquery",
+      "name": "jQuery",
+      "group": "frontend",
+      "aliases": [
+        "jquery"
+      ]
+    },
+    {
+      "id": "jtag-swd",
+      "name": "JTAG/SWD Debugging",
+      "group": "embedded",
+      "aliases": [
+        "jtag",
+        "swd",
+        "jtag/swd",
+        "jtag/swd debugging"
+      ]
+    },
+    {
+      "id": "junit",
+      "name": "JUnit",
+      "group": "testing",
+      "parent": "unit-testing",
+      "aliases": [
+        "junit",
+        "junit5",
+        "junit 5"
+      ]
+    },
+    {
+      "id": "jwt",
+      "name": "JWT",
+      "group": "security",
+      "aliases": [
+        "jwt",
+        "json web token",
+        "json web tokens"
+      ]
+    },
+    {
+      "id": "keycloak",
+      "name": "Keycloak",
+      "group": "security",
+      "aliases": [
+        "keycloak"
+      ]
+    },
+    {
+      "id": "kicad",
+      "name": "KiCad",
+      "group": "embedded",
+      "aliases": [
+        "kicad"
+      ]
+    },
+    {
+      "id": "kling",
+      "name": "Kling",
+      "group": "llm",
+      "aliases": [
+        "kling",
+        "kling ai"
+      ]
+    },
+    {
+      "id": "kms",
+      "name": "Key Management Service",
+      "group": "security",
+      "aliases": [
+        "kms",
+        "key management service",
+        "aws kms"
+      ]
+    },
+    {
+      "id": "knowledge-distillation",
+      "name": "Knowledge Distillation",
+      "group": "ml",
+      "aliases": [
+        "knowledge distillation",
+        "model distillation"
+      ]
+    },
+    {
+      "id": "knowledge-graphs",
+      "name": "Knowledge Graphs",
+      "group": "data",
+      "aliases": [
+        "knowledge graphs",
+        "knowledge graph"
+      ]
+    },
+    {
+      "id": "kotlin",
+      "name": "Kotlin",
+      "group": "language",
+      "aliases": [
+        "kotlin"
+      ]
+    },
+    {
+      "id": "kql",
+      "name": "KQL",
+      "group": "data",
+      "aliases": [
+        "kql",
+        "kusto query language",
+        "kql (kusto query language)"
+      ]
+    },
+    {
+      "id": "labview",
+      "name": "LabVIEW",
+      "group": "embedded",
+      "aliases": [
+        "labview",
+        "lab view"
+      ]
+    },
+    {
+      "id": "laravel",
+      "name": "Laravel",
+      "group": "backend",
+      "aliases": [
+        "laravel"
+      ]
+    },
+    {
+      "id": "ldap",
+      "name": "LDAP",
+      "group": "sysadmin",
+      "aliases": [
+        "ldap",
+        "active directory ldap",
+        "ldap/ad"
+      ]
+    },
+    {
+      "id": "lerna",
+      "name": "Lerna",
+      "group": "frontend",
+      "aliases": [
+        "lerna"
+      ]
+    },
+    {
+      "id": "locust",
+      "name": "Locust",
+      "group": "testing",
+      "aliases": [
+        "locust"
+      ]
+    },
+    {
+      "id": "logic-analyzer",
+      "name": "Logic Analyzer",
+      "group": "embedded",
+      "aliases": [
+        "logic analyzer",
+        "logic analyser"
+      ]
+    },
+    {
+      "id": "loki",
+      "name": "Loki",
+      "group": "devops",
+      "aliases": [
+        "loki",
+        "grafana loki"
+      ]
+    },
+    {
+      "id": "macos",
+      "name": "macOS",
+      "group": "sysadmin",
+      "aliases": [
+        "macos",
+        "mac os",
+        "macos administration",
+        "apple macos"
+      ]
+    },
+    {
+      "id": "make",
+      "name": "Make / Makefile",
+      "group": "devops",
+      "aliases": [
+        "make",
+        "makefile",
+        "make / makefile"
+      ]
+    },
+    {
+      "id": "manual-testing",
+      "name": "Manual Testing",
+      "group": "testing",
+      "aliases": [
+        "manual testing",
+        "manual qa",
+        "ручне тестування"
+      ]
+    },
+    {
+      "id": "mariadb",
+      "name": "MariaDB",
+      "group": "database",
+      "aliases": [
+        "mariadb"
+      ]
+    },
+    {
+      "id": "matlab-simulink",
+      "name": "MATLAB / Simulink",
+      "group": "embedded",
+      "aliases": [
+        "matlab",
+        "simulink",
+        "matlab/simulink",
+        "matlab / simulink"
+      ]
+    },
+    {
+      "id": "maven",
+      "name": "Maven",
+      "group": "backend",
+      "aliases": [
+        "maven",
+        "apache maven"
+      ]
+    },
+    {
+      "id": "mdm",
+      "name": "Mobile Device Management",
+      "group": "sysadmin",
+      "aliases": [
+        "mdm",
+        "mobile device management",
+        "mdm (mobile device management)"
+      ]
+    },
+    {
+      "id": "memcached",
+      "name": "Memcached",
+      "group": "database",
+      "aliases": [
+        "memcached"
+      ]
+    },
+    {
+      "id": "metasploit",
+      "name": "Metasploit",
+      "group": "security",
+      "aliases": [
+        "metasploit"
+      ]
+    },
+    {
+      "id": "mfa",
+      "name": "Multi-Factor Authentication",
+      "group": "security",
+      "aliases": [
+        "mfa",
+        "multi-factor authentication",
+        "mfa (multi-factor authentication)"
+      ]
+    },
+    {
+      "id": "microservices",
+      "name": "Microservices",
+      "group": "architecture",
+      "aliases": [
+        "microservices",
+        "microservices architecture",
+        "мікросервісна архітектура",
+        "мікросервіси"
+      ]
+    },
+    {
+      "id": "microsoft-365",
+      "name": "Microsoft 365",
+      "group": "sysadmin",
+      "aliases": [
+        "microsoft 365",
+        "ms 365",
+        "microsoft 365 administration",
+        "m365"
+      ]
+    },
+    {
+      "id": "microsoft-fabric",
+      "name": "Microsoft Fabric",
+      "group": "data-eng",
+      "aliases": [
+        "microsoft fabric"
+      ]
+    },
+    {
+      "id": "hyper-v",
+      "name": "Microsoft Hyper-V",
+      "group": "sysadmin",
+      "aliases": [
+        "hyper-v",
+        "microsoft hyper-v"
+      ]
+    },
+    {
+      "id": "microsoft-intune",
+      "name": "Microsoft Intune",
+      "group": "sysadmin",
+      "aliases": [
+        "microsoft intune",
+        "intune"
+      ]
+    },
+    {
+      "id": "microsoft-purview",
+      "name": "Microsoft Purview",
+      "group": "data",
+      "aliases": [
+        "microsoft purview",
+        "purview"
+      ]
+    },
+    {
+      "id": "microsoft-sentinel",
+      "name": "Microsoft Sentinel",
+      "group": "security",
+      "aliases": [
+        "microsoft sentinel",
+        "azure sentinel",
+        "sentinel siem"
+      ]
+    },
+    {
+      "id": "scom",
+      "name": "Microsoft System Center Operations Manager",
+      "group": "sysadmin",
+      "aliases": [
+        "scom",
+        "system center operations manager",
+        "microsoft system center operations manager"
+      ]
+    },
+    {
+      "id": "windows-server",
+      "name": "Windows Server",
+      "group": "sysadmin",
+      "aliases": [
+        "windows server",
+        "microsoft windows server",
+        "windows",
+        "windows 10/11",
+        "windows 10",
+        "windows 11",
+        "windows administration",
+        "windows server administration"
+      ]
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "group": "llm",
+      "aliases": [
+        "midjourney"
+      ]
+    },
+    {
+      "id": "mikrotik",
+      "name": "MikroTik",
+      "group": "sysadmin",
+      "aliases": [
+        "mikrotik"
+      ]
+    },
+    {
+      "id": "milvus",
+      "name": "Milvus",
+      "group": "llm",
+      "aliases": [
+        "milvus"
+      ]
+    },
+    {
+      "id": "minio",
+      "name": "MinIO",
+      "group": "data-eng",
+      "aliases": [
+        "minio"
+      ]
+    },
+    {
+      "id": "mission-planner",
+      "name": "Mission Planner",
+      "group": "embedded",
+      "aliases": [
+        "mission planner"
+      ]
+    },
+    {
+      "id": "mitre-attack",
+      "name": "MITRE ATT&CK",
+      "group": "security",
+      "aliases": [
+        "mitre att&ck",
+        "mitre attack"
+      ]
+    },
+    {
+      "id": "mobx",
+      "name": "MobX",
+      "group": "frontend",
+      "aliases": [
+        "mobx"
+      ]
+    },
+    {
+      "id": "mockito",
+      "name": "Mockito",
+      "group": "testing",
+      "parent": "unit-testing",
+      "aliases": [
+        "mockito"
+      ]
+    },
+    {
+      "id": "mssql",
+      "name": "Microsoft SQL Server",
+      "group": "database",
+      "aliases": [
+        "ms sql",
+        "ms sql server",
+        "mssql",
+        "microsoft sql server",
+        "sql server"
+      ]
+    },
+    {
+      "id": "multithreading",
+      "name": "Multithreading",
+      "group": "backend",
+      "aliases": [
+        "multithreading",
+        "concurrency",
+        "multithreading and concurrency"
+      ]
+    },
+    {
+      "id": "mvvm",
+      "name": "MVVM",
+      "group": "architecture",
+      "aliases": [
+        "mvvm",
+        "model-view-viewmodel"
+      ]
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "group": "database",
+      "aliases": [
+        "mysql"
+      ]
+    },
+    {
+      "id": "n8n",
+      "name": "n8n",
+      "group": "data-eng",
+      "aliases": [
+        "n8n"
+      ]
+    },
+    {
+      "id": "nats",
+      "name": "NATS",
+      "group": "data-eng",
+      "aliases": [
+        "nats",
+        "nats messaging"
+      ]
+    },
+    {
+      "id": "ncnn",
+      "name": "NCNN",
+      "group": "ml",
+      "aliases": [
+        "ncnn"
+      ]
+    },
+    {
+      "id": "neo4j",
+      "name": "Neo4j",
+      "group": "database",
+      "aliases": [
+        "neo4j"
+      ]
+    },
+    {
+      "id": "nestjs",
+      "name": "NestJS",
+      "group": "backend",
+      "aliases": [
+        "nestjs",
+        "nest.js"
+      ]
+    },
+    {
+      "id": "network-security",
+      "name": "Network Security",
+      "group": "security",
+      "aliases": [
+        "network security",
+        "network traffic analysis"
+      ]
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "group": "frontend",
+      "aliases": [
+        "next.js",
+        "nextjs"
+      ]
+    },
+    {
+      "id": "nginx",
+      "name": "NGINX",
+      "group": "devops",
+      "aliases": [
+        "nginx"
+      ]
+    },
+    {
+      "id": "nist",
+      "name": "NIST",
+      "group": "security",
+      "aliases": [
+        "nist",
+        "nist standards",
+        "nist framework"
+      ]
+    },
+    {
+      "id": "nmap",
+      "name": "Nmap",
+      "group": "security",
+      "aliases": [
+        "nmap"
+      ]
+    },
+    {
+      "id": "npm",
+      "name": "npm",
+      "group": "devops",
+      "aliases": [
+        "npm"
+      ]
+    },
+    {
+      "id": "nunit",
+      "name": "NUnit",
+      "group": "testing",
+      "parent": "unit-testing",
+      "aliases": [
+        "nunit"
+      ]
+    },
+    {
+      "id": "nvidia-jetson",
+      "name": "NVIDIA Jetson",
+      "group": "embedded",
+      "aliases": [
+        "nvidia jetson",
+        "jetson nano",
+        "jetson"
+      ]
+    },
+    {
+      "id": "oauth",
+      "name": "OAuth / OpenID Connect",
+      "group": "security",
+      "aliases": [
+        "oauth 2.0",
+        "oauth2",
+        "oauth",
+        "openid connect",
+        "oidc",
+        "oauth / openid connect",
+        "sso",
+        "single sign-on",
+        "single sign on",
+        "saml"
+      ]
+    },
+    {
+      "id": "object-tracking",
+      "name": "Object Tracking",
+      "group": "cv",
+      "aliases": [
+        "object tracking"
+      ]
+    },
+    {
+      "id": "oop",
+      "name": "OOP",
+      "group": "architecture",
+      "aliases": [
+        "oop",
+        "object-oriented programming",
+        "object-oriented programming (oop)",
+        "oop principles",
+        "oop, solid, design patterns"
+      ]
+    },
+    {
+      "id": "objective-c",
+      "name": "Objective-C",
+      "group": "language",
+      "aliases": [
+        "objective-c",
+        "objc"
+      ]
+    },
+    {
+      "id": "odoo",
+      "name": "Odoo",
+      "group": "erp",
+      "aliases": [
+        "odoo"
+      ]
+    },
+    {
+      "id": "okta",
+      "name": "Okta",
+      "group": "security",
+      "aliases": [
+        "okta"
+      ]
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "group": "llm",
+      "aliases": [
+        "openrouter"
+      ]
+    },
+    {
+      "id": "opentofu",
+      "name": "OpenTofu",
+      "group": "devops",
+      "aliases": [
+        "opentofu"
+      ]
+    },
+    {
+      "id": "openvino",
+      "name": "OpenVINO",
+      "group": "ml",
+      "aliases": [
+        "openvino",
+        "intel openvino"
+      ]
+    },
+    {
+      "id": "optuna",
+      "name": "Optuna",
+      "group": "ml",
+      "aliases": [
+        "optuna"
+      ]
+    },
+    {
+      "id": "oracle-db",
+      "name": "Oracle Database",
+      "group": "database",
+      "aliases": [
+        "oracle",
+        "oracle database",
+        "oracle db"
+      ]
+    },
+    {
+      "id": "oci",
+      "name": "Oracle Cloud Infrastructure",
+      "group": "cloud",
+      "aliases": [
+        "oci",
+        "oracle cloud infrastructure",
+        "oracle cloud infrastructure (oci)",
+        "oracle cloud"
+      ]
+    },
+    {
+      "id": "pl-sql",
+      "name": "PL/SQL",
+      "group": "database",
+      "aliases": [
+        "pl/sql",
+        "oracle pl/sql",
+        "plsql"
+      ]
+    },
+    {
+      "id": "oscilloscope",
+      "name": "Oscilloscope",
+      "group": "embedded",
+      "aliases": [
+        "oscilloscope"
+      ]
+    },
+    {
+      "id": "owasp",
+      "name": "OWASP",
+      "group": "security",
+      "aliases": [
+        "owasp",
+        "owasp top 10",
+        "owasp asvs"
+      ]
+    },
+    {
+      "id": "parquet",
+      "name": "Apache Parquet",
+      "group": "data-eng",
+      "aliases": [
+        "parquet",
+        "apache parquet"
+      ]
+    },
+    {
+      "id": "pci-dss",
+      "name": "PCI DSS",
+      "group": "security",
+      "aliases": [
+        "pci dss",
+        "pci dss compliance",
+        "pci-dss"
+      ]
+    },
+    {
+      "id": "penetration-testing",
+      "name": "Penetration Testing",
+      "group": "security",
+      "aliases": [
+        "penetration testing",
+        "pentest",
+        "pentesting"
+      ]
+    },
+    {
+      "id": "perf",
+      "name": "perf",
+      "group": "devops",
+      "aliases": [
+        "perf",
+        "linux perf"
+      ]
+    },
+    {
+      "id": "performance-testing",
+      "name": "Performance Testing",
+      "group": "testing",
+      "aliases": [
+        "performance testing",
+        "load testing"
+      ]
+    },
+    {
+      "id": "php",
+      "name": "PHP",
+      "group": "language",
+      "aliases": [
+        "php",
+        "php 8+",
+        "php8"
+      ]
+    },
+    {
+      "id": "phpunit",
+      "name": "PHPUnit",
+      "group": "testing",
+      "parent": "unit-testing",
+      "aliases": [
+        "phpunit"
+      ]
+    },
+    {
+      "id": "pid-controllers",
+      "name": "PID Controllers",
+      "group": "embedded",
+      "aliases": [
+        "pid controllers",
+        "pid controller",
+        "pid control"
+      ]
+    },
+    {
+      "id": "pixi-js",
+      "name": "PixiJS",
+      "group": "frontend",
+      "aliases": [
+        "pixi.js",
+        "pixijs"
+      ]
+    },
+    {
+      "id": "playwright",
+      "name": "Playwright",
+      "group": "testing",
+      "aliases": [
+        "playwright"
+      ]
+    },
+    {
+      "id": "polars",
+      "name": "Polars",
+      "group": "data",
+      "aliases": [
+        "polars"
+      ]
+    },
+    {
+      "id": "postgis",
+      "name": "PostGIS",
+      "group": "database",
+      "aliases": [
+        "postgis"
+      ]
+    },
+    {
+      "id": "postman",
+      "name": "Postman",
+      "group": "testing",
+      "aliases": [
+        "postman"
+      ]
+    },
+    {
+      "id": "power-automate",
+      "name": "Power Automate",
+      "group": "backend",
+      "aliases": [
+        "power automate",
+        "microsoft power automate"
+      ]
+    },
+    {
+      "id": "power-bi",
+      "name": "Power BI",
+      "group": "data",
+      "aliases": [
+        "power bi",
+        "microsoft power bi"
+      ]
+    },
+    {
+      "id": "power-platform",
+      "name": "Microsoft Power Platform",
+      "group": "backend",
+      "aliases": [
+        "power platform",
+        "microsoft power platform"
+      ]
+    },
+    {
+      "id": "powershell",
+      "name": "PowerShell",
+      "group": "devops",
+      "aliases": [
+        "powershell",
+        "powershell scripting"
+      ]
+    },
+    {
+      "id": "prefect",
+      "name": "Prefect",
+      "group": "data-eng",
+      "aliases": [
+        "prefect"
+      ]
+    },
+    {
+      "id": "prisma",
+      "name": "Prisma ORM",
+      "group": "backend",
+      "aliases": [
+        "prisma",
+        "prisma orm"
+      ]
+    },
+    {
+      "id": "proxmox",
+      "name": "Proxmox",
+      "group": "devops",
+      "aliases": [
+        "proxmox",
+        "proxmox ve"
+      ]
+    },
+    {
+      "id": "pubsub",
+      "name": "Pub/Sub",
+      "group": "data-eng",
+      "aliases": [
+        "pub/sub",
+        "google pub/sub",
+        "gcp pub/sub"
+      ]
+    },
+    {
+      "id": "pulumi",
+      "name": "Pulumi",
+      "group": "devops",
+      "aliases": [
+        "pulumi"
+      ]
+    },
+    {
+      "id": "pydantic",
+      "name": "Pydantic",
+      "group": "backend",
+      "aliases": [
+        "pydantic"
+      ]
+    },
+    {
+      "id": "pydantic-ai",
+      "name": "PydanticAI",
+      "group": "llm",
+      "aliases": [
+        "pydantic ai",
+        "pydanticai"
+      ]
+    },
+    {
+      "id": "pytest",
+      "name": "pytest",
+      "group": "testing",
+      "parent": "unit-testing",
+      "aliases": [
+        "pytest"
+      ]
+    },
+    {
+      "id": "qgroundcontrol",
+      "name": "QGroundControl",
+      "group": "embedded",
+      "aliases": [
+        "qgroundcontrol"
+      ]
+    },
+    {
+      "id": "qt",
+      "name": "Qt Framework",
+      "group": "embedded",
+      "aliases": [
+        "qt",
+        "qt framework",
+        "qt/qml",
+        "qml"
+      ]
+    },
+    {
+      "id": "quantization",
+      "name": "Model Quantization",
+      "group": "ml",
+      "aliases": [
+        "quantization",
+        "model quantization"
+      ]
+    },
+    {
+      "id": "rabbitmq",
+      "name": "RabbitMQ",
+      "group": "backend",
+      "aliases": [
+        "rabbitmq"
+      ]
+    },
+    {
+      "id": "raspberry-pi",
+      "name": "Raspberry Pi",
+      "group": "embedded",
+      "aliases": [
+        "raspberry pi"
+      ]
+    },
+    {
+      "id": "rbac",
+      "name": "RBAC",
+      "group": "security",
+      "aliases": [
+        "rbac",
+        "rbac (role-based access control)",
+        "role-based access control"
+      ]
+    },
+    {
+      "id": "react-native",
+      "name": "React Native",
+      "group": "mobile",
+      "aliases": [
+        "react native"
+      ]
+    },
+    {
+      "id": "react-testing-library",
+      "name": "React Testing Library",
+      "group": "testing",
+      "parent": "unit-testing",
+      "aliases": [
+        "react testing library",
+        "rtl"
+      ]
+    },
+    {
+      "id": "redux",
+      "name": "Redux",
+      "group": "frontend",
+      "aliases": [
+        "redux",
+        "redux toolkit"
+      ]
+    },
+    {
+      "id": "reverse-engineering",
+      "name": "Reverse Engineering",
+      "group": "security",
+      "aliases": [
+        "reverse engineering"
+      ]
+    },
+    {
+      "id": "android-room",
+      "name": "Android Room",
+      "group": "mobile",
+      "aliases": [
+        "room",
+        "android room",
+        "room database"
+      ]
+    },
+    {
+      "id": "ros",
+      "name": "ROS",
+      "group": "embedded",
+      "aliases": [
+        "ros",
+        "ros 2",
+        "ros2",
+        "ros/ros2",
+        "robot operating system 2"
+      ]
+    },
+    {
+      "id": "rtsp",
+      "name": "RTSP",
+      "group": "backend",
+      "aliases": [
+        "rtsp",
+        "real time streaming protocol"
+      ]
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "group": "language",
+      "aliases": [
+        "ruby"
+      ]
+    },
+    {
+      "id": "ruby-on-rails",
+      "name": "Ruby on Rails",
+      "group": "backend",
+      "aliases": [
+        "ruby on rails",
+        "rails",
+        "ror"
+      ]
+    },
+    {
+      "id": "runsap",
+      "name": "RunSAP Methodology",
+      "group": "erp",
+      "aliases": [
+        "runsap methodology",
+        "runsap"
+      ]
+    },
+    {
+      "id": "rust",
+      "name": "Rust",
+      "group": "language",
+      "aliases": [
+        "rust"
+      ]
+    },
+    {
+      "id": "rxjs",
+      "name": "RxJS",
+      "group": "frontend",
+      "aliases": [
+        "rxjs",
+        "rx.js"
+      ]
+    },
+    {
+      "id": "salesforce",
+      "name": "Salesforce",
+      "group": "erp",
+      "aliases": [
+        "salesforce",
+        "sfdc"
+      ]
+    },
+    {
+      "id": "salesforce-dx",
+      "name": "Salesforce DX",
+      "group": "erp",
+      "aliases": [
+        "salesforce dx",
+        "sfdx"
+      ]
+    },
+    {
+      "id": "salesforce-flows",
+      "name": "Salesforce Flows",
+      "group": "erp",
+      "aliases": [
+        "salesforce flows",
+        "salesforce flow"
+      ]
+    },
+    {
+      "id": "sap",
+      "name": "SAP",
+      "group": "erp",
+      "aliases": [
+        "sap"
+      ]
+    },
+    {
+      "id": "sap-activate",
+      "name": "SAP Activate Methodology",
+      "group": "erp",
+      "aliases": [
+        "sap activate methodology",
+        "sap activate"
+      ]
+    },
+    {
+      "id": "sap-s4hana",
+      "name": "SAP S/4HANA",
+      "group": "erp",
+      "aliases": [
+        "sap s/4hana",
+        "sap erp/s4hana",
+        "s4hana",
+        "s/4hana",
+        "sap erp"
+      ]
+    },
+    {
+      "id": "sast",
+      "name": "SAST",
+      "group": "security",
+      "aliases": [
+        "sast",
+        "static application security testing",
+        "sast (static application security testing)"
+      ]
+    },
+    {
+      "id": "sca",
+      "name": "SCA",
+      "group": "security",
+      "aliases": [
+        "sca",
+        "software composition analysis",
+        "sca (software composition analysis)"
+      ]
+    },
+    {
+      "id": "scala",
+      "name": "Scala",
+      "group": "language",
+      "aliases": [
+        "scala"
+      ]
+    },
+    {
+      "id": "scikit-image",
+      "name": "scikit-image",
+      "group": "cv",
+      "aliases": [
+        "scikit-image",
+        "skimage"
+      ]
+    },
+    {
+      "id": "sdr",
+      "name": "SDR",
+      "group": "embedded",
+      "aliases": [
+        "sdr",
+        "software defined radio",
+        "sdr (software defined radio)"
+      ]
+    },
+    {
+      "id": "secret-scanning",
+      "name": "Secret Scanning",
+      "group": "security",
+      "aliases": [
+        "secret scanning"
+      ]
+    },
+    {
+      "id": "secure-code-review",
+      "name": "Secure Code Review",
+      "group": "security",
+      "aliases": [
+        "secure code review",
+        "security code review"
+      ]
+    },
+    {
+      "id": "selenium",
+      "name": "Selenium",
+      "group": "testing",
+      "aliases": [
+        "selenium",
+        "selenium webdriver"
+      ]
+    },
+    {
+      "id": "semantic-kernel",
+      "name": "Semantic Kernel",
+      "group": "llm",
+      "aliases": [
+        "semantic kernel"
+      ]
+    },
+    {
+      "id": "sensor-fusion",
+      "name": "Sensor Fusion",
+      "group": "embedded",
+      "aliases": [
+        "sensor fusion"
+      ]
+    },
+    {
+      "id": "salesforce-service-cloud",
+      "name": "Salesforce Service Cloud",
+      "group": "erp",
+      "aliases": [
+        "service cloud",
+        "salesforce service cloud"
+      ]
+    },
+    {
+      "id": "service-mesh",
+      "name": "Service Mesh",
+      "group": "devops",
+      "aliases": [
+        "service mesh",
+        "istio",
+        "linkerd"
+      ]
+    },
+    {
+      "id": "shap",
+      "name": "SHAP",
+      "group": "ml",
+      "aliases": [
+        "shap",
+        "shapley values",
+        "model explainability"
+      ]
+    },
+    {
+      "id": "sharepoint",
+      "name": "SharePoint",
+      "group": "sysadmin",
+      "aliases": [
+        "sharepoint",
+        "microsoft sharepoint"
+      ]
+    },
+    {
+      "id": "siem",
+      "name": "SIEM",
+      "group": "security",
+      "aliases": [
+        "siem",
+        "security information and event management",
+        "siem (security information and event management)",
+        "splunk"
+      ]
+    },
+    {
+      "id": "signalr",
+      "name": "SignalR",
+      "group": "backend",
+      "aliases": [
+        "signalr"
+      ]
+    },
+    {
+      "id": "slam",
+      "name": "SLAM",
+      "group": "embedded",
+      "aliases": [
+        "slam",
+        "simultaneous localization and mapping"
+      ]
+    },
+    {
+      "id": "snowflake",
+      "name": "Snowflake",
+      "group": "data-eng",
+      "aliases": [
+        "snowflake"
+      ]
+    },
+    {
+      "id": "soap",
+      "name": "SOAP",
+      "group": "backend",
+      "aliases": [
+        "soap",
+        "soap api",
+        "soap web services"
+      ]
+    },
+    {
+      "id": "soc2",
+      "name": "SOC 2",
+      "group": "security",
+      "aliases": [
+        "soc 2",
+        "soc2",
+        "soc 2 compliance"
+      ]
+    },
+    {
+      "id": "soldering",
+      "name": "Soldering",
+      "group": "embedded",
+      "aliases": [
+        "soldering",
+        "soldering skills"
+      ]
+    },
+    {
+      "id": "solid-principles",
+      "name": "SOLID Principles",
+      "group": "architecture",
+      "aliases": [
+        "solid",
+        "solid principles"
+      ]
+    },
+    {
+      "id": "sonarqube",
+      "name": "SonarQube",
+      "group": "devops",
+      "aliases": [
+        "sonarqube",
+        "sonar"
+      ]
+    },
+    {
+      "id": "soql",
+      "name": "SOQL",
+      "group": "erp",
+      "aliases": [
+        "soql",
+        "salesforce object query language"
+      ]
+    },
+    {
+      "id": "spacy",
+      "name": "spaCy",
+      "group": "nlp-speech",
+      "aliases": [
+        "spacy",
+        "spacy nlp"
+      ]
+    },
+    {
+      "id": "spi",
+      "name": "SPI",
+      "group": "embedded",
+      "aliases": [
+        "spi",
+        "serial peripheral interface"
+      ]
+    },
+    {
+      "id": "spring-boot",
+      "name": "Spring Boot",
+      "group": "backend",
+      "aliases": [
+        "spring boot",
+        "spring-boot",
+        "spring framework",
+        "spring"
+      ]
+    },
+    {
+      "id": "sqlalchemy",
+      "name": "SQLAlchemy",
+      "group": "backend",
+      "aliases": [
+        "sqlalchemy"
+      ]
+    },
+    {
+      "id": "sqlite",
+      "name": "SQLite",
+      "group": "database",
+      "aliases": [
+        "sqlite"
+      ]
+    },
+    {
+      "id": "aws-sqs",
+      "name": "Amazon SQS / SNS",
+      "group": "cloud",
+      "aliases": [
+        "sqs",
+        "sqs/sns",
+        "amazon sqs",
+        "sns",
+        "amazon sns",
+        "amazon sqs / sns"
+      ]
+    },
+    {
+      "id": "ssh",
+      "name": "SSH",
+      "group": "sysadmin",
+      "aliases": [
+        "ssh",
+        "secure shell"
+      ]
+    },
+    {
+      "id": "stm32",
+      "name": "STM32",
+      "group": "embedded",
+      "aliases": [
+        "stm32",
+        "stm32 microcontroller",
+        "stm32 mcu"
+      ]
+    },
+    {
+      "id": "storybook",
+      "name": "Storybook",
+      "group": "frontend",
+      "aliases": [
+        "storybook",
+        "storybook.js"
+      ]
+    },
+    {
+      "id": "supertest",
+      "name": "Supertest",
+      "group": "testing",
+      "aliases": [
+        "supertest"
+      ]
+    },
+    {
+      "id": "swagger",
+      "name": "Swagger / OpenAPI",
+      "group": "backend",
+      "aliases": [
+        "swagger",
+        "openapi",
+        "swagger ui",
+        "open api",
+        "swagger / openapi"
+      ]
+    },
+    {
+      "id": "swift",
+      "name": "Swift",
+      "group": "language",
+      "aliases": [
+        "swift"
+      ]
+    },
+    {
+      "id": "symfony",
+      "name": "Symfony",
+      "group": "backend",
+      "aliases": [
+        "symfony"
+      ]
+    },
+    {
+      "id": "system-design",
+      "name": "System Design",
+      "group": "architecture",
+      "aliases": [
+        "system design",
+        "high load",
+        "distributed systems design"
+      ]
+    },
+    {
+      "id": "t-sql",
+      "name": "T-SQL",
+      "group": "database",
+      "aliases": [
+        "t-sql",
+        "tsql",
+        "transact-sql"
+      ]
+    },
+    {
+      "id": "slack-administration",
+      "name": "Slack Administration",
+      "group": "sysadmin",
+      "aliases": [
+        "slack administration",
+        "slack admin"
+      ]
+    },
+    {
+      "id": "tailwind-css",
+      "name": "Tailwind CSS",
+      "group": "frontend",
+      "aliases": [
+        "tailwind",
+        "tailwind css",
+        "tailwindcss"
+      ]
+    },
+    {
+      "id": "tanstack-query",
+      "name": "TanStack Query",
+      "group": "frontend",
+      "aliases": [
+        "tanstack query",
+        "react query",
+        "tanstack/react-query"
+      ]
+    },
+    {
+      "id": "tcp-ip",
+      "name": "TCP/IP",
+      "group": "sysadmin",
+      "aliases": [
+        "tcp/ip",
+        "tcp ip",
+        "tcp/ip networking"
+      ]
+    },
+    {
+      "id": "temporal",
+      "name": "Temporal",
+      "group": "backend",
+      "aliases": [
+        "temporal",
+        "temporal.io",
+        "temporal workflow"
+      ]
+    },
+    {
+      "id": "terragrunt",
+      "name": "Terragrunt",
+      "group": "devops",
+      "aliases": [
+        "terragrunt"
+      ]
+    },
+    {
+      "id": "testcontainers",
+      "name": "Testcontainers",
+      "group": "testing",
+      "aliases": [
+        "testcontainers"
+      ]
+    },
+    {
+      "id": "testng",
+      "name": "TestNG",
+      "group": "testing",
+      "parent": "unit-testing",
+      "aliases": [
+        "testng"
+      ]
+    },
+    {
+      "id": "testrail",
+      "name": "TestRail",
+      "group": "testing",
+      "aliases": [
+        "testrail"
+      ]
+    },
+    {
+      "id": "threat-hunting",
+      "name": "Threat Hunting",
+      "group": "security",
+      "aliases": [
+        "threat hunting"
+      ]
+    },
+    {
+      "id": "threat-modeling",
+      "name": "Threat Modeling",
+      "group": "security",
+      "aliases": [
+        "threat modeling",
+        "threat modelling"
+      ]
+    },
+    {
+      "id": "threejs",
+      "name": "Three.js",
+      "group": "frontend",
+      "aliases": [
+        "three.js",
+        "threejs",
+        "three js"
+      ]
+    },
+    {
+      "id": "twilio",
+      "name": "Twilio",
+      "group": "backend",
+      "aliases": [
+        "twilio"
+      ]
+    },
+    {
+      "id": "typeorm",
+      "name": "TypeORM",
+      "group": "backend",
+      "aliases": [
+        "typeorm"
+      ]
+    },
+    {
+      "id": "uart",
+      "name": "UART",
+      "group": "embedded",
+      "aliases": [
+        "uart"
+      ]
+    },
+    {
+      "id": "unit-testing",
+      "name": "Unit Testing",
+      "group": "testing",
+      "aliases": [
+        "unit testing",
+        "unit and integration tests",
+        "unit tests",
+        "integration testing",
+        "unit & integration testing"
+      ]
+    },
+    {
+      "id": "unity",
+      "name": "Unity",
+      "group": "gamedev",
+      "aliases": [
+        "unity",
+        "unity3d",
+        "unity engine"
+      ]
+    },
+    {
+      "id": "unity-catalog",
+      "name": "Unity Catalog",
+      "group": "data-eng",
+      "aliases": [
+        "unity catalog",
+        "databricks unity catalog"
+      ]
+    },
+    {
+      "id": "veo",
+      "name": "Veo",
+      "group": "ml",
+      "aliases": [
+        "veo",
+        "google veo"
+      ]
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "group": "cloud",
+      "aliases": [
+        "vercel"
+      ]
+    },
+    {
+      "id": "victoriametrics",
+      "name": "VictoriaMetrics",
+      "group": "devops",
+      "aliases": [
+        "victoriametrics"
+      ]
+    },
+    {
+      "id": "vite",
+      "name": "Vite",
+      "group": "frontend",
+      "aliases": [
+        "vite",
+        "vite.js"
+      ]
+    },
+    {
+      "id": "vitest",
+      "name": "Vitest",
+      "group": "testing",
+      "parent": "unit-testing",
+      "aliases": [
+        "vitest"
+      ]
+    },
+    {
+      "id": "vlan",
+      "name": "VLAN",
+      "group": "sysadmin",
+      "aliases": [
+        "vlan",
+        "virtual lan",
+        "virtual local area network"
+      ]
+    },
+    {
+      "id": "vmware",
+      "name": "VMware",
+      "group": "sysadmin",
+      "aliases": [
+        "vmware",
+        "vmware vsphere",
+        "vsphere",
+        "vmware esxi",
+        "esxi"
+      ]
+    },
+    {
+      "id": "vpc",
+      "name": "VPC",
+      "group": "cloud",
+      "aliases": [
+        "vpc",
+        "virtual private cloud"
+      ]
+    },
+    {
+      "id": "vpn",
+      "name": "VPN",
+      "group": "security",
+      "aliases": [
+        "vpn",
+        "virtual private network"
+      ]
+    },
+    {
+      "id": "vue",
+      "name": "Vue.js",
+      "group": "frontend",
+      "aliases": [
+        "vue",
+        "vue.js",
+        "vue 3",
+        "vuejs",
+        "vue3"
+      ]
+    },
+    {
+      "id": "vulnerability-management",
+      "name": "Vulnerability Management",
+      "group": "security",
+      "aliases": [
+        "vulnerability management",
+        "vulnerability assessment"
+      ]
+    },
+    {
+      "id": "waf",
+      "name": "WAF",
+      "group": "security",
+      "aliases": [
+        "waf",
+        "web application firewall",
+        "waf (web application firewall)"
+      ]
+    },
+    {
+      "id": "webhooks",
+      "name": "Webhooks",
+      "group": "backend",
+      "aliases": [
+        "webhooks",
+        "webhook"
+      ]
+    },
+    {
+      "id": "webpack",
+      "name": "Webpack",
+      "group": "frontend",
+      "aliases": [
+        "webpack"
+      ]
+    },
+    {
+      "id": "webrtc",
+      "name": "WebRTC",
+      "group": "backend",
+      "aliases": [
+        "webrtc",
+        "web rtc"
+      ]
+    },
+    {
+      "id": "websocket",
+      "name": "WebSocket",
+      "group": "backend",
+      "aliases": [
+        "websocket",
+        "websockets",
+        "web socket"
+      ]
+    },
+    {
+      "id": "weights-and-biases",
+      "name": "Weights & Biases",
+      "group": "ml",
+      "aliases": [
+        "weights & biases",
+        "weights and biases",
+        "wandb",
+        "w&b"
+      ]
+    },
+    {
+      "id": "wireguard",
+      "name": "WireGuard",
+      "group": "security",
+      "aliases": [
+        "wireguard"
+      ]
+    },
+    {
+      "id": "wireshark",
+      "name": "Wireshark",
+      "group": "security",
+      "aliases": [
+        "wireshark"
+      ]
+    },
+    {
+      "id": "wordpress",
+      "name": "WordPress",
+      "group": "backend",
+      "aliases": [
+        "wordpress"
+      ]
+    },
+    {
+      "id": "wpf",
+      "name": "WPF",
+      "group": "frontend",
+      "aliases": [
+        "wpf",
+        "windows presentation foundation"
+      ]
+    },
+    {
+      "id": "xcode",
+      "name": "Xcode",
+      "group": "mobile",
+      "aliases": [
+        "xcode"
+      ]
+    },
+    {
+      "id": "xml",
+      "name": "XML",
+      "group": "backend",
+      "aliases": [
+        "xml",
+        "xpath",
+        "xslt"
+      ]
+    },
+    {
+      "id": "yocto",
+      "name": "Yocto",
+      "group": "embedded",
+      "aliases": [
+        "yocto",
+        "yocto project",
+        "yocto linux"
+      ]
+    },
+    {
+      "id": "zabbix",
+      "name": "Zabbix",
+      "group": "devops",
+      "aliases": [
+        "zabbix"
+      ]
+    },
+    {
+      "id": "zapier",
+      "name": "Zapier",
+      "group": "backend",
+      "aliases": [
+        "zapier"
+      ]
+    },
+    {
+      "id": "zero-trust",
+      "name": "Zero Trust",
+      "group": "security",
+      "aliases": [
+        "zero trust",
+        "zero-trust",
+        "zero trust architecture",
+        "ztna"
+      ]
+    },
+    {
+      "id": "circuit-design",
+      "name": "Circuit Design",
+      "group": "embedded",
+      "aliases": [
+        "аналогова та цифрова схемотехніка",
+        "схемотехніка",
+        "circuit design",
+        "analog and digital circuit design",
+        "electronics circuit design",
+        "базові знання електроніки, фізики та схемотехніки"
+      ]
+    },
+    {
+      "id": "backup",
+      "name": "Backup & Recovery",
+      "group": "sysadmin",
+      "aliases": [
+        "backup",
+        "резервне копіювання",
+        "backup and recovery",
+        "data backup",
+        "backup & recovery"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+# Tests only; not packaged into the Lambda zip.
+-r requirements.txt
+pytest
+reportlab

@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "id": "dou-100001",
+  "source": "dou",
+  "url": "https://jobs.dou.ua/companies/example-co/vacancies/100001/",
+  "title": "Middle AI Engineer",
+  "company": "Example Co",
+  "scraped_at": "2026-10-31T06:00:00Z",
+  "seniority": "middle",
+  "role_type": "ai-engineer",
+  "requirements": [
+    {
+      "any_of": [
+        "python"
+      ],
+      "min_level": 3,
+      "required": true,
+      "evidence": "3+ years of commercial Python development",
+      "min_years": 3
+    },
+    {
+      "any_of": [
+        "llm-api"
+      ],
+      "min_level": 3,
+      "required": true,
+      "evidence": "production experience with LLM-based systems",
+      "min_years": null
+    },
+    {
+      "any_of": [
+        "rag"
+      ],
+      "min_level": 2,
+      "required": true,
+      "evidence": "hands-on experience building RAG pipelines",
+      "min_years": null
+    },
+    {
+      "any_of": [
+        "pgvector",
+        "qdrant",
+        "pinecone"
+      ],
+      "min_level": 2,
+      "required": true,
+      "evidence": "experience with a vector store (pgvector, Qdrant or Pinecone)",
+      "min_years": null
+    },
+    {
+      "any_of": [
+        "aws",
+        "azure",
+        "gcp"
+      ],
+      "min_level": 2,
+      "required": true,
+      "evidence": "experience with at least one cloud (AWS, Azure or GCP)",
+      "min_years": null
+    },
+    {
+      "any_of": [
+        "docker"
+      ],
+      "min_level": 2,
+      "required": true,
+      "evidence": "Docker",
+      "min_years": null
+    },
+    {
+      "any_of": [
+        "langgraph"
+      ],
+      "min_level": 1,
+      "required": false,
+      "evidence": "LangGraph would be a plus",
+      "min_years": null
+    },
+    {
+      "any_of": [
+        "llm-evals"
+      ],
+      "min_level": 1,
+      "required": false,
+      "evidence": "familiarity with LLM evaluation (Langfuse, RAGAS)",
+      "min_years": null
+    }
+  ],
+  "experience": {
+    "min_years": 3,
+    "max_years": null
+  },
+  "english": {
+    "min_level": "B2",
+    "evidence": "Upper-Intermediate English"
+  },
+  "salary": {
+    "from": 3000,
+    "to": 4500,
+    "currency": "USD",
+    "period": "month"
+  },
+  "domains": [
+    "Fintech / Banking / Insurance / Capital markets"
+  ],
+  "location": {
+    "remote": true,
+    "cities": [
+      "Kyiv"
+    ]
+  },
+  "unmapped": [
+    {
+      "text": "Pydantic",
+      "required": true
+    }
+  ],
+  "parse": {
+    "model": "anthropic.claude-haiku-5-5",
+    "prompt_version": "vacancy-v1",
+    "parsed_at": "2026-10-31T06:05:00Z"
+  }
+}

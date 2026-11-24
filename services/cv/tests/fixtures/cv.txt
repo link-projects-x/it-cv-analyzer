@@ -1,0 +1,23 @@
+Synthetic CV written for tests. The person, companies and contacts are invented.
+
+Marta Example-Testova
+AI Engineer
+marta.example@example.com | +380 00 000 0000 | Lviv, Ukraine
+
+SUMMARY
+AI engineer with 4 years of commercial Python development, the last 2 years on LLM products.
+English: Upper-Intermediate.
+
+EXPERIENCE
+Example Co (product company), AI Engineer, 2024 - present
+- Built a RAG assistant for accountants on Amazon Bedrock and pgvector, used by 3,000 customers
+- FastAPI services deployed to AWS Lambda with Terraform
+
+Sample Soft (outsourcing), Python Developer, 2022 - 2024
+- Django backend and PostgreSQL for a fintech client
+
+PET PROJECTS
+- LangGraph agent that triages GitHub issues (side project)
+
+COURSES
+- Coursera: Deep Learning Specialization (PyTorch)

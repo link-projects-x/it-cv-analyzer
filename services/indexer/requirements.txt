@@ -1,0 +1,6 @@
+# The contracts use the formats date-time (rfc3339-validator), uri (rfc3986-validator) and uuid (built in).
+# jsonschema[format-nongpl] is not used: it pulls python-dateutil 3.x, which in the zip shadows the Lambda runtime's
+# copy that botocore needs (botocore 1.43 requires python-dateutil<3).
+jsonschema>=4.18
+rfc3339-validator
+rfc3986-validator

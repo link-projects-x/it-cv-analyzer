@@ -1,0 +1,4 @@
+# Tests only; not packaged into the Lambda zip. boto3 is used to sign a presigned POST offline.
+-r requirements.txt
+pytest
+boto3

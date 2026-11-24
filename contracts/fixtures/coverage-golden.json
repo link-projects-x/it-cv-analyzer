@@ -1,0 +1,912 @@
+[
+  {
+    "name": "example profile vs example vacancy 1",
+    "profile": {
+      "skills": {
+        "typescript": 3,
+        "nodejs": 3,
+        "python": 2,
+        "open-source-llm": 2,
+        "prompt-engineering": 2,
+        "sql": 3,
+        "postgresql": 3,
+        "docker": 2,
+        "git": 3,
+        "react": 3
+      },
+      "experience_years": 4,
+      "english": "B2"
+    },
+    "vacancy": {
+      "schema_version": "1.0",
+      "id": "dou-100001",
+      "source": "dou",
+      "url": "https://jobs.dou.ua/companies/example-co/vacancies/100001/",
+      "title": "Middle AI Engineer",
+      "company": "Example Co",
+      "scraped_at": "2026-10-31T06:00:00Z",
+      "seniority": "middle",
+      "role_type": "ai-engineer",
+      "requirements": [
+        {
+          "any_of": [
+            "python"
+          ],
+          "min_level": 3,
+          "required": true,
+          "evidence": "3+ years of commercial Python development",
+          "min_years": 3
+        },
+        {
+          "any_of": [
+            "llm-api"
+          ],
+          "min_level": 3,
+          "required": true,
+          "evidence": "production experience with LLM-based systems",
+          "min_years": null
+        },
+        {
+          "any_of": [
+            "rag"
+          ],
+          "min_level": 2,
+          "required": true,
+          "evidence": "hands-on experience building RAG pipelines",
+          "min_years": null
+        },
+        {
+          "any_of": [
+            "pgvector",
+            "qdrant",
+            "pinecone"
+          ],
+          "min_level": 2,
+          "required": true,
+          "evidence": "experience with a vector store (pgvector, Qdrant or Pinecone)",
+          "min_years": null
+        },
+        {
+          "any_of": [
+            "aws",
+            "azure",
+            "gcp"
+          ],
+          "min_level": 2,
+          "required": true,
+          "evidence": "experience with at least one cloud (AWS, Azure or GCP)",
+          "min_years": null
+        },
+        {
+          "any_of": [
+            "docker"
+          ],
+          "min_level": 2,
+          "required": true,
+          "evidence": "Docker",
+          "min_years": null
+        },
+        {
+          "any_of": [
+            "langgraph"
+          ],
+          "min_level": 1,
+          "required": false,
+          "evidence": "LangGraph would be a plus",
+          "min_years": null
+        },
+        {
+          "any_of": [
+            "llm-evals"
+          ],
+          "min_level": 1,
+          "required": false,
+          "evidence": "familiarity with LLM evaluation (Langfuse, RAGAS)",
+          "min_years": null
+        }
+      ],
+      "experience": {
+        "min_years": 3,
+        "max_years": null
+      },
+      "english": {
+        "min_level": "B2",
+        "evidence": "Upper-Intermediate English"
+      },
+      "salary": {
+        "from": 3000,
+        "to": 4500,
+        "currency": "USD",
+        "period": "month"
+      },
+      "domains": [
+        "Fintech / Banking / Insurance / Capital markets"
+      ],
+      "location": {
+        "remote": true,
+        "cities": [
+          "Kyiv"
+        ]
+      },
+      "unmapped": [
+        {
+          "text": "Pydantic",
+          "required": true
+        }
+      ],
+      "parse": {
+        "model": "anthropic.claude-haiku-5-5",
+        "prompt_version": "vacancy-v1",
+        "parsed_at": "2026-10-31T06:05:00Z"
+      }
+    },
+    "expected": {
+      "coverage": 0.4117647058823529,
+      "fits": false
+    }
+  },
+  {
+    "name": "example profile vs example vacancy 2",
+    "profile": {
+      "skills": {
+        "typescript": 3,
+        "nodejs": 3,
+        "python": 2,
+        "open-source-llm": 2,
+        "prompt-engineering": 2,
+        "sql": 3,
+        "postgresql": 3,
+        "docker": 2,
+        "git": 3,
+        "react": 3
+      },
+      "experience_years": 4,
+      "english": "B2"
+    },
+    "vacancy": {
+      "schema_version": "1.0",
+      "id": "dou-100002",
+      "source": "dou",
+      "url": "https://jobs.dou.ua/companies/example-co/vacancies/100002/",
+      "title": "ML Engineer (Computer Vision)",
+      "company": "Example Co",
+      "scraped_at": "2026-10-31T06:00:00Z",
+      "seniority": "senior",
+      "role_type": "cv-engineer",
+      "requirements": [
+        {
+          "any_of": [
+            "python"
+          ],
+          "min_level": 3,
+          "required": true,
+          "evidence": "5+ years of Python",
+          "min_years": 5
+        },
+        {
+          "any_of": [
+            "pytorch"
+          ],
+          "min_level": 3,
+          "required": true,
+          "evidence": "production experience with PyTorch",
+          "min_years": null
+        },
+        {
+          "any_of": [
+            "computer-vision"
+          ],
+          "min_level": 3,
+          "required": true,
+          "evidence": "object detection and tracking in production",
+          "min_years": null
+        },
+        {
+          "any_of": [
+            "model-inference"
+          ],
+          "min_level": 2,
+          "required": true,
+          "evidence": "ONNX / TensorRT optimization",
+          "min_years": null
+        },
+        {
+          "any_of": [
+            "aws-sagemaker",
+            "aws-ec2"
+          ],
+          "min_level": 1,
+          "required": false,
+          "evidence": "AWS (SageMaker, EC2) will be a plus",
+          "min_years": null
+        }
+      ],
+      "experience": {
+        "min_years": 5,
+        "max_years": null
+      },
+      "english": {
+        "min_level": "B1",
+        "evidence": "Intermediate English"
+      },
+      "salary": null,
+      "domains": [
+        "DefTech / MilTech"
+      ],
+      "location": {
+        "remote": false,
+        "cities": [
+          "Lviv"
+        ]
+      },
+      "unmapped": [],
+      "parse": {
+        "model": "anthropic.claude-haiku-5-5",
+        "prompt_version": "vacancy-v1",
+        "parsed_at": "2026-10-31T06:05:00Z"
+      }
+    },
+    "expected": {
+      "coverage": 0.2833333333333334,
+      "fits": false
+    }
+  },
+  {
+    "name": "partial years: 2 of the skill's 3",
+    "profile": {
+      "skills": {
+        "python": 2,
+        "aws-bedrock": 2,
+        "docker": 3
+      },
+      "experience_years": 2,
+      "english": "B2"
+    },
+    "vacancy": {
+      "seniority": "unknown",
+      "requirements": [
+        {
+          "any_of": [
+            "python"
+          ],
+          "min_level": 2,
+          "min_years": 3,
+          "required": true,
+          "evidence": "x"
+        }
+      ],
+      "experience": {
+        "min_years": null,
+        "max_years": null
+      },
+      "english": {
+        "min_level": null,
+        "evidence": null
+      }
+    },
+    "expected": {
+      "coverage": 0.6666666666666666,
+      "fits": false
+    }
+  },
+  {
+    "name": "over the needed years is capped at 1",
+    "profile": {
+      "skills": {
+        "python": 2,
+        "aws-bedrock": 2,
+        "docker": 3
+      },
+      "experience_years": 2,
+      "english": "B2"
+    },
+    "vacancy": {
+      "seniority": "unknown",
+      "requirements": [
+        {
+          "any_of": [
+            "docker"
+          ],
+          "min_level": 2,
+          "min_years": 2,
+          "required": true,
+          "evidence": "x"
+        }
+      ],
+      "experience": {
+        "min_years": null,
+        "max_years": null
+      },
+      "english": {
+        "min_level": null,
+        "evidence": null
+      }
+    },
+    "expected": {
+      "coverage": 1.0,
+      "fits": true
+    }
+  },
+  {
+    "name": "missing skill scores 0",
+    "profile": {
+      "skills": {
+        "python": 2,
+        "aws-bedrock": 2,
+        "docker": 3
+      },
+      "experience_years": 2,
+      "english": "B2"
+    },
+    "vacancy": {
+      "seniority": "unknown",
+      "requirements": [
+        {
+          "any_of": [
+            "pytorch"
+          ],
+          "min_level": 2,
+          "min_years": 2,
+          "required": true,
+          "evidence": "x"
+        }
+      ],
+      "experience": {
+        "min_years": null,
+        "max_years": null
+      },
+      "english": {
+        "min_level": null,
+        "evidence": null
+      }
+    },
+    "expected": {
+      "coverage": 0.0,
+      "fits": false
+    }
+  },
+  {
+    "name": "any_of takes the best option",
+    "profile": {
+      "skills": {
+        "python": 2,
+        "aws-bedrock": 2,
+        "docker": 3
+      },
+      "experience_years": 2,
+      "english": "B2"
+    },
+    "vacancy": {
+      "seniority": "unknown",
+      "requirements": [
+        {
+          "any_of": [
+            "azure",
+            "docker",
+            "gcp"
+          ],
+          "min_level": 2,
+          "min_years": 3,
+          "required": true,
+          "evidence": "x"
+        }
+      ],
+      "experience": {
+        "min_years": null,
+        "max_years": null
+      },
+      "english": {
+        "min_level": null,
+        "evidence": null
+      }
+    },
+    "expected": {
+      "coverage": 1.0,
+      "fits": true
+    }
+  },
+  {
+    "name": "hierarchy: child years lift the parent",
+    "profile": {
+      "skills": {
+        "python": 2,
+        "aws-bedrock": 2,
+        "docker": 3
+      },
+      "experience_years": 2,
+      "english": "B2"
+    },
+    "vacancy": {
+      "seniority": "unknown",
+      "requirements": [
+        {
+          "any_of": [
+            "aws"
+          ],
+          "min_level": 2,
+          "min_years": 2,
+          "required": true,
+          "evidence": "x"
+        }
+      ],
+      "experience": {
+        "min_years": null,
+        "max_years": null
+      },
+      "english": {
+        "min_level": null,
+        "evidence": null
+      }
+    },
+    "expected": {
+      "coverage": 1.0,
+      "fits": true
+    }
+  },
+  {
+    "name": "hierarchy does not flow down to children",
+    "profile": {
+      "skills": {
+        "aws": 3
+      },
+      "experience_years": 2,
+      "english": "B2"
+    },
+    "vacancy": {
+      "seniority": "unknown",
+      "requirements": [
+        {
+          "any_of": [
+            "aws-bedrock"
+          ],
+          "min_level": 2,
+          "min_years": 1,
+          "required": true,
+          "evidence": "x"
+        }
+      ],
+      "experience": {
+        "min_years": null,
+        "max_years": null
+      },
+      "english": {
+        "min_level": null,
+        "evidence": null
+      }
+    },
+    "expected": {
+      "coverage": 0.0,
+      "fits": false
+    }
+  },
+  {
+    "name": "optional weighs half of required",
+    "profile": {
+      "skills": {
+        "python": 2,
+        "aws-bedrock": 2,
+        "docker": 3
+      },
+      "experience_years": 2,
+      "english": "B2"
+    },
+    "vacancy": {
+      "seniority": "unknown",
+      "requirements": [
+        {
+          "any_of": [
+            "python"
+          ],
+          "min_level": 2,
+          "min_years": 2,
+          "required": true,
+          "evidence": "x"
+        },
+        {
+          "any_of": [
+            "pytorch"
+          ],
+          "min_level": 2,
+          "min_years": 2,
+          "required": false,
+          "evidence": "x"
+        }
+      ],
+      "experience": {
+        "min_years": null,
+        "max_years": null
+      },
+      "english": {
+        "min_level": null,
+        "evidence": null
+      }
+    },
+    "expected": {
+      "coverage": 0.6666666666666666,
+      "fits": false
+    }
+  },
+  {
+    "name": "no skill years: the vacancy's experience is inherited",
+    "profile": {
+      "skills": {
+        "python": 2,
+        "aws-bedrock": 2,
+        "docker": 3
+      },
+      "experience_years": 2,
+      "english": "B2"
+    },
+    "vacancy": {
+      "seniority": "unknown",
+      "requirements": [
+        {
+          "any_of": [
+            "python"
+          ],
+          "min_level": 2,
+          "min_years": null,
+          "required": true,
+          "evidence": "x"
+        }
+      ],
+      "experience": {
+        "min_years": 4,
+        "max_years": null
+      },
+      "english": {
+        "min_level": null,
+        "evidence": null
+      }
+    },
+    "expected": {
+      "coverage": 0.5,
+      "fits": false
+    }
+  },
+  {
+    "name": "no years at all: the grade's typical years",
+    "profile": {
+      "skills": {
+        "python": 2,
+        "aws-bedrock": 2,
+        "docker": 3
+      },
+      "experience_years": 2,
+      "english": "B2"
+    },
+    "vacancy": {
+      "seniority": "senior",
+      "requirements": [
+        {
+          "any_of": [
+            "python"
+          ],
+          "min_level": 2,
+          "min_years": null,
+          "required": true,
+          "evidence": "x"
+        }
+      ],
+      "experience": {
+        "min_years": null,
+        "max_years": null
+      },
+      "english": {
+        "min_level": null,
+        "evidence": null
+      }
+    },
+    "expected": {
+      "coverage": 0.4,
+      "fits": false
+    }
+  },
+  {
+    "name": "no years and no grade: default years",
+    "profile": {
+      "skills": {
+        "python": 2,
+        "aws-bedrock": 2,
+        "docker": 3
+      },
+      "experience_years": 2,
+      "english": "B2"
+    },
+    "vacancy": {
+      "seniority": "unknown",
+      "requirements": [
+        {
+          "any_of": [
+            "python"
+          ],
+          "min_level": 2,
+          "min_years": null,
+          "required": true,
+          "evidence": "x"
+        }
+      ],
+      "experience": {
+        "min_years": null,
+        "max_years": null
+      },
+      "english": {
+        "min_level": null,
+        "evidence": null
+      }
+    },
+    "expected": {
+      "coverage": 1.0,
+      "fits": true
+    }
+  },
+  {
+    "name": "a skill asked with 0 years needs any years",
+    "profile": {
+      "skills": {
+        "python": 2,
+        "aws-bedrock": 2,
+        "docker": 3
+      },
+      "experience_years": 2,
+      "english": "B2"
+    },
+    "vacancy": {
+      "seniority": "unknown",
+      "requirements": [
+        {
+          "any_of": [
+            "python"
+          ],
+          "min_level": 2,
+          "min_years": 0,
+          "required": true,
+          "evidence": "x"
+        },
+        {
+          "any_of": [
+            "pytorch"
+          ],
+          "min_level": 2,
+          "min_years": 0,
+          "required": true,
+          "evidence": "x"
+        }
+      ],
+      "experience": {
+        "min_years": null,
+        "max_years": null
+      },
+      "english": {
+        "min_level": null,
+        "evidence": null
+      }
+    },
+    "expected": {
+      "coverage": 0.5,
+      "fits": false
+    }
+  },
+  {
+    "name": "experience partial",
+    "profile": {
+      "skills": {
+        "python": 2,
+        "aws-bedrock": 2,
+        "docker": 3
+      },
+      "experience_years": 2,
+      "english": "B2"
+    },
+    "vacancy": {
+      "seniority": "unknown",
+      "requirements": [],
+      "experience": {
+        "min_years": 4,
+        "max_years": null
+      },
+      "english": {
+        "min_level": null,
+        "evidence": null
+      }
+    },
+    "expected": {
+      "coverage": 0.5,
+      "fits": false
+    }
+  },
+  {
+    "name": "experience zero is skipped",
+    "profile": {
+      "skills": {
+        "python": 2,
+        "aws-bedrock": 2,
+        "docker": 3
+      },
+      "experience_years": 2,
+      "english": "B2"
+    },
+    "vacancy": {
+      "seniority": "unknown",
+      "requirements": [
+        {
+          "any_of": [
+            "python"
+          ],
+          "min_level": 2,
+          "min_years": 2,
+          "required": true,
+          "evidence": "x"
+        }
+      ],
+      "experience": {
+        "min_years": 0,
+        "max_years": null
+      },
+      "english": {
+        "min_level": null,
+        "evidence": null
+      }
+    },
+    "expected": {
+      "coverage": 1.0,
+      "fits": true
+    }
+  },
+  {
+    "name": "english below the bar",
+    "profile": {
+      "skills": {
+        "python": 2,
+        "aws-bedrock": 2,
+        "docker": 3
+      },
+      "experience_years": 2,
+      "english": "B1"
+    },
+    "vacancy": {
+      "seniority": "unknown",
+      "requirements": [],
+      "experience": {
+        "min_years": null,
+        "max_years": null
+      },
+      "english": {
+        "min_level": "C1",
+        "evidence": "x"
+      }
+    },
+    "expected": {
+      "coverage": 0.6,
+      "fits": false
+    }
+  },
+  {
+    "name": "english missing in profile",
+    "profile": {
+      "skills": {
+        "python": 2,
+        "aws-bedrock": 2,
+        "docker": 3
+      },
+      "experience_years": 2,
+      "english": null
+    },
+    "vacancy": {
+      "seniority": "unknown",
+      "requirements": [],
+      "experience": {
+        "min_years": null,
+        "max_years": null
+      },
+      "english": {
+        "min_level": "B2",
+        "evidence": "x"
+      }
+    },
+    "expected": {
+      "coverage": 0.0,
+      "fits": false
+    }
+  },
+  {
+    "name": "fits exactly at the threshold",
+    "profile": {
+      "skills": {
+        "python": 2
+      },
+      "experience_years": 2,
+      "english": "B2"
+    },
+    "vacancy": {
+      "seniority": "unknown",
+      "requirements": [
+        {
+          "any_of": [
+            "python"
+          ],
+          "min_level": 2,
+          "min_years": 2,
+          "required": true,
+          "evidence": "x"
+        },
+        {
+          "any_of": [
+            "python"
+          ],
+          "min_level": 2,
+          "min_years": 2,
+          "required": true,
+          "evidence": "x"
+        },
+        {
+          "any_of": [
+            "python"
+          ],
+          "min_level": 2,
+          "min_years": 2,
+          "required": true,
+          "evidence": "x"
+        },
+        {
+          "any_of": [
+            "python"
+          ],
+          "min_level": 2,
+          "min_years": 2,
+          "required": true,
+          "evidence": "x"
+        },
+        {
+          "any_of": [
+            "pytorch"
+          ],
+          "min_level": 2,
+          "min_years": 1,
+          "required": true,
+          "evidence": "x"
+        }
+      ],
+      "experience": {
+        "min_years": null,
+        "max_years": null
+      },
+      "english": {
+        "min_level": null,
+        "evidence": null
+      }
+    },
+    "expected": {
+      "coverage": 0.8,
+      "fits": true
+    }
+  },
+  {
+    "name": "nothing to score",
+    "profile": {
+      "skills": {
+        "python": 2,
+        "aws-bedrock": 2,
+        "docker": 3
+      },
+      "experience_years": 2,
+      "english": "B2"
+    },
+    "vacancy": {
+      "seniority": "unknown",
+      "requirements": [],
+      "experience": {
+        "min_years": null,
+        "max_years": null
+      },
+      "english": {
+        "min_level": null,
+        "evidence": null
+      }
+    },
+    "expected": {
+      "coverage": null,
+      "fits": false
+    }
+  }
+]

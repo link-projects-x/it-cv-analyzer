@@ -1,0 +1,244 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dou-cv-analyzer.local/contracts/vacancy.schema.json",
+  "title": "Vacancy after LLM parsing",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "source",
+    "url",
+    "title",
+    "company",
+    "scraped_at",
+    "seniority",
+    "role_type",
+    "requirements",
+    "experience",
+    "english",
+    "salary",
+    "domains",
+    "location",
+    "unmapped",
+    "parse"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schemaVersion"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^dou-[0-9]+$",
+      "description": "dou-<vacancy ID from the URL>"
+    },
+    "source": {
+      "const": "dou"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "title": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "scraped_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "seniority": {
+      "$ref": "common.schema.json#/$defs/seniority"
+    },
+    "role_type": {
+      "$ref": "common.schema.json#/$defs/roleType"
+    },
+    "requirements": {
+      "description": "One item per requirement. any_of with one ID is a specific skill; with several IDs any of them satisfies it (\"AWS, Azure or GCP\").",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "any_of",
+          "min_level",
+          "required",
+          "evidence"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "any_of": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "$ref": "common.schema.json#/$defs/skillId"
+            }
+          },
+          "min_level": {
+            "description": "1: familiarity / understanding / знання; 2: experience with / hands-on / досвід; 3: production / commercial / N years in X.",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 3
+          },
+          "required": {
+            "description": "false if the skill is listed under nice to have / will be a plus / буде перевагою.",
+            "type": "boolean"
+          },
+          "evidence": {
+            "$ref": "common.schema.json#/$defs/evidence"
+          },
+          "min_years": {
+            "description": "Years the vacancy asks for this skill when the text ties a number to it (\"3+ years with React\" -> 3); null otherwise. Files parsed before 2026-11-22 lack the field.",
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 30
+          }
+        }
+      }
+    },
+    "experience": {
+      "description": "\"3+ years\" -> min 3, max null. \"3-5 years\" -> min 3, max 5. Not stated -> both null.",
+      "type": "object",
+      "required": [
+        "min_years",
+        "max_years"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "min_years": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "max_years": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        }
+      }
+    },
+    "english": {
+      "type": "object",
+      "required": [
+        "min_level",
+        "evidence"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "min_level": {
+          "description": "Pre-Intermediate -> A2, Intermediate -> B1, Upper-Intermediate / B2+ -> B2, Advanced / Fluent -> C1, Native -> C2. Not stated -> null.",
+          "oneOf": [
+            {
+              "$ref": "common.schema.json#/$defs/cefr"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence": {
+          "oneOf": [
+            {
+              "$ref": "common.schema.json#/$defs/evidence"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "salary": {
+      "description": "Salary range from the vacancy. null if not stated.",
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "required": [
+            "from",
+            "to",
+            "currency",
+            "period"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "from": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "to": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "currency": {
+              "enum": [
+                "USD",
+                "EUR",
+                "UAH"
+              ]
+            },
+            "period": {
+              "enum": [
+                "month",
+                "year",
+                "hour"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "domains": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "common.schema.json#/$defs/domain"
+      }
+    },
+    "location": {
+      "type": "object",
+      "required": [
+        "remote",
+        "cities"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "remote": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "cities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "unmapped": {
+      "$ref": "common.schema.json#/$defs/unmapped"
+    },
+    "parse": {
+      "$ref": "common.schema.json#/$defs/parseMeta"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dou-cv-analyzer.local/contracts/common.schema.json",
+  "title": "Shared types",
+  "$defs": {
+    "schemaVersion": { "const": "1.0" },
+    "skillId": {
+      "description": "ID from contracts/skills.json. contracts/check.py checks that the ID exists; the schema checks only the format.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "skillLevel": {
+      "description": "0 none, 1 tried, 2 pet project, 3 production. Definitions in skills.json -> levels.",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3
+    },
+    "cefr": {
+      "description": "English level. ml/salary maps it to the DOU survey values.",
+      "enum": ["A1", "A2", "B1", "B2", "C1", "C2"]
+    },
+    "seniority": {
+      "enum": ["intern", "junior", "middle", "senior", "lead", "principal", "unknown"]
+    },
+    "roleType": {
+      "enum": ["ai-engineer", "ml-engineer", "cv-engineer", "data-scientist", "mlops", "other"]
+    },
+    "domain": {
+      "description": "Project domains, copied 1:1 from the DOU survey columns (June 2026) so the salary model uses them without mapping.",
+      "enum": [
+        "AdTech / Marketing",
+        "AI / Data / Analytics",
+        "Blockchain / Web3",
+        "DefTech / MilTech",
+        "E-commerce / Retail / Marketplace",
+        "EdTech / Education",
+        "Enterprise / SaaS / ERP",
+        "Fintech / Banking / Insurance / Capital markets",
+        "GameDev",
+        "Gambling",
+        "GovTech / Legal / Public services",
+        "Healthcare / MedTech / Wellbeing / Sports",
+        "Hospitality / Travel / HORECA",
+        "Industrial / Manufacturing / Energy / Agriculture",
+        "Automotive",
+        "Embedded / IoT / Hardware / Robotics",
+        "Infrastructure / Cloud / Hosting / Telecom",
+        "Logistics / Supply Chain / Geospatial",
+        "Media / Entertainment / Dating / Consumer apps",
+        "Real Estate / PropTech",
+        "Security / Cybersecurity"
+      ]
+    },
+    "evidence": {
+      "description": "Short quote from the source text that the LLM based the value on. Used for eval and debugging.",
+      "type": "string",
+      "maxLength": 300
+    },
+    "unmapped": {
+      "description": "Skills missing from skills.json. They do not count in matching; review the list to extend the vocabulary.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["text"],
+        "additionalProperties": false,
+        "properties": {
+          "text": { "type": "string", "maxLength": 120 },
+          "required": { "type": "boolean" }
+        }
+      }
+    },
+    "parseMeta": {
+      "type": "object",
+      "required": ["model", "prompt_version", "parsed_at"],
+      "additionalProperties": false,
+      "properties": {
+        "model": { "type": "string", "examples": ["anthropic.claude-haiku-5-5"] },
+        "prompt_version": { "type": "string", "examples": ["vacancy-v1"] },
+        "parsed_at": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}

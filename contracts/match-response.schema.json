@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dou-cv-analyzer.local/contracts/match-response.schema.json",
+  "title": "API response to a CV upload",
+  "description": "Everything the frontend needs for the sliders without extra requests: profile, 50 nearest vacancies and the salary estimate table.",
+  "type": "object",
+  "required": ["schema_version", "profile", "vacancies", "salary"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "$ref": "common.schema.json#/$defs/schemaVersion" },
+    "profile": { "$ref": "profile.schema.json" },
+
+    "vacancies": {
+      "description": "Up to 50 vacancies, ordered by similarity descending. The frontend computes match coverage with the formula in contracts/README.md.",
+      "type": "array",
+      "maxItems": 50,
+      "items": {
+        "type": "object",
+        "required": ["similarity", "vacancy"],
+        "additionalProperties": false,
+        "properties": {
+          "similarity": {
+            "description": "Cosine similarity between the CV and vacancy embeddings.",
+            "type": "number",
+            "minimum": -1,
+            "maximum": 1
+          },
+          "vacancy": { "$ref": "vacancy.schema.json" }
+        }
+      }
+    },
+
+    "salary": {
+      "description": "Salary model estimate. grid: value of one slider -> estimate with all other profile fields unchanged.",
+      "type": "object",
+      "required": ["currency", "period", "point", "low", "high", "model_version", "grid"],
+      "additionalProperties": false,
+      "properties": {
+        "currency": { "const": "USD" },
+        "period": { "const": "month" },
+        "point": { "type": "number", "minimum": 0 },
+        "low": { "type": ["number", "null"], "minimum": 0, "description": "Lower bound of the range; null while the model returns only a point estimate." },
+        "high": { "type": ["number", "null"], "minimum": 0 },
+        "model_version": { "type": "string" },
+        "grid": {
+          "type": "object",
+          "required": ["english", "experience_years", "company_type", "domains"],
+          "additionalProperties": false,
+          "properties": {
+            "english": {
+              "type": "object",
+              "propertyNames": { "$ref": "common.schema.json#/$defs/cefr" },
+              "additionalProperties": { "type": "number", "minimum": 0 }
+            },
+            "experience_years": {
+              "type": "object",
+              "propertyNames": { "pattern": "^([0-9]|1[0-5])$" },
+              "additionalProperties": { "type": "number", "minimum": 0 }
+            },
+            "company_type": {
+              "type": "object",
+              "propertyNames": { "$ref": "profile.schema.json#/properties/salary_features/properties/company_type" },
+              "additionalProperties": { "type": "number", "minimum": 0 }
+            },
+            "domains": {
+              "type": "object",
+              "propertyNames": { "$ref": "common.schema.json#/$defs/domain" },
+              "additionalProperties": { "type": "number", "minimum": 0 }
+            }
+          }
+        }
+      }
+    }
+  }
+}

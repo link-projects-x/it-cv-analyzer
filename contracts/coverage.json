@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "weights": {
+    "required": 2,
+    "optional": 1,
+    "experience": 2,
+    "english": 1
+  },
+  "fits_threshold": 0.8,
+  "cefr_order": [
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "C1",
+    "C2"
+  ],
+  "sliders": {
+    "skill": {
+      "min": 0,
+      "max": 10,
+      "step": 0.5
+    },
+    "experience_years": {
+      "min": 0,
+      "max": 15,
+      "step": 1
+    },
+    "english": {
+      "values": [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ]
+    }
+  },
+  "skill_years": {
+    "_source": "grade_years: 25th percentile of experience by title in the DOU salary survey, June 2026 (12,630 rows after ml/salary filters). inherit_factor: median of per-skill years / vacancy years over required requirements that state both, 1,116 cases in 1,802 vacancies parsed 2026-11-22: median 1.0, p25 1.0, p75 1.0, 78% exactly equal. Those are mostly the vacancy's core skills; for other skills the factor is an assumption.",
+    "grade_years": {
+      "intern": 0.1,
+      "junior": 1,
+      "middle": 3,
+      "senior": 5,
+      "lead": 5,
+      "principal": 8
+    },
+    "default_years": 1,
+    "inherit_factor": 1.0
+  }
+}

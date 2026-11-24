@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "id": "6f1c2b9e-3d4a-4f7b-9a10-2c5e8d7b1a01",
+  "created_at": "2026-10-31T09:00:00Z",
+  "skills": [
+    {
+      "id": "typescript",
+      "level": 3,
+      "evidence": "4 years of TypeScript in a SaaS backend"
+    },
+    {
+      "id": "nodejs",
+      "level": 3,
+      "evidence": "Node.js services in production"
+    },
+    {
+      "id": "python",
+      "level": 2,
+      "evidence": "pet project: document classifier in Python"
+    },
+    {
+      "id": "open-source-llm",
+      "level": 2,
+      "evidence": "pet project: local LLM via Ollama"
+    },
+    {
+      "id": "prompt-engineering",
+      "level": 2,
+      "evidence": "prompt design for the classifier pet project"
+    },
+    {
+      "id": "sql",
+      "level": 3,
+      "evidence": "PostgreSQL schema design and queries in production"
+    },
+    {
+      "id": "postgresql",
+      "level": 3,
+      "evidence": "PostgreSQL schema design and queries in production"
+    },
+    {
+      "id": "docker",
+      "level": 2,
+      "evidence": "Docker Compose for local development"
+    },
+    {
+      "id": "git",
+      "level": 3,
+      "evidence": "Git flow and code review at work"
+    },
+    {
+      "id": "react",
+      "level": 3,
+      "evidence": "React admin panel in production"
+    }
+  ],
+  "experience_years": 4,
+  "english": "B2",
+  "seniority": "middle",
+  "role_type": "other",
+  "salary_features": {
+    "category": "Software Engineering & Architecture",
+    "title": "Middle",
+    "primary_language": "TypeScript",
+    "company_type": "Продуктова",
+    "company_size": null,
+    "domains": [
+      "AI / Data / Analytics"
+    ],
+    "residence": "В Україні"
+  },
+  "unmapped": [
+    {
+      "text": "Prisma"
+    }
+  ],
+  "parse": {
+    "model": "anthropic.claude-haiku-5-5",
+    "prompt_version": "profile-v1",
+    "parsed_at": "2026-10-31T09:00:03Z"
+  }
+}
