@@ -4,9 +4,9 @@ Upload a CV, see which skills it is missing for IT vacancies, and move sliders t
 
 Live demo: https://it-cv-analyzer.vercel.app
 
-The demo runs entirely in the browser: the CV is parsed locally (PDF, DOCX, TXT) and never leaves the page. It compares the CV with about 1,770 parsed vacancies from jobs.dou.ua across 30 IT categories and estimates salary with a model trained on the open DOU salary survey. The vacancy data in the demo is anonymised: no company names, no titles, no quotes or links, only grade, required skills, years, English level and location.
+The demo runs entirely in the browser: the CV is parsed locally (PDF, DOCX, TXT) and never leaves the page. It compares the CV with about 1,770 parsed vacancies from the Ukrainian IT market across 30 categories and estimates salary with a model trained on an open salary survey of Ukrainian developers. The vacancy data in the demo is anonymised: no company names, no titles, no quotes or links, only grade, required skills, years, English level and location.
 
-A Job Squad learning project: the full pipeline is built as the set of AWS services that DOU AI/ML vacancies mention most often (Lambda, S3, Bedrock, SageMaker, Terraform). The live demo is the static build of the same frontend.
+A Job Squad learning project: the full pipeline is built as the set of AWS services that AI/ML vacancies mention most often (Lambda, S3, Bedrock, SageMaker, Terraform). The live demo is the static build of the same frontend.
 
 ## Layout
 
@@ -14,12 +14,12 @@ A Job Squad learning project: the full pipeline is built as the set of AWS servi
 contracts/          JSON Schemas, skill vocabulary, examples, check.py
 infra/              Terraform (see infra/README.md for the diagram and deploy steps)
 scripts/            build_lambdas.sh: Lambda zips for python3.13 arm64
-services/scraper/   Lambda: DOU vacancies → S3 raw/dou-<id>.html
-services/parser/    Lambda: raw/ → Claude Haiku 5.5 on Bedrock → processed/dou-<id>.json (vacancy.schema.json)
+services/scraper/   Lambda: job board vacancies → S3 raw/
+services/parser/    Lambda: raw/ → Claude Haiku 5.5 on Bedrock → processed/ (vacancy.schema.json)
 services/cv/        Lambda: CV from S3 → profile (profile.schema.json)
 services/indexer/   Lambda: processed/ → index/vacancies.jsonl with embeddings (daily)
 services/api/       Lambdas: matcher (profile → top 50 + salary → matches/) and the HTTP API (uploads, job status)
-ml/salary/          model training on the DOU salary survey, SageMaker
+ml/salary/          model training on an open salary survey, SageMaker
 web/                React + TypeScript, sliders
 eval/               hand-labelled 20–30 vacancies and a script comparing them with the LLM parse
 docs/tasks/         briefs the steps were built from; ui-reference.md has the palette and UI patterns
@@ -39,8 +39,8 @@ docs/tasks/         briefs the steps were built from; ui-reference.md has the pa
 
 ## Data
 
-- Vacancies: jobs.dou.ua, AI/ML category.
-- Salaries: open DOU salary survey, github.com/devua/csv, `salaries/2026_june_raw.csv` (14,361 responses).
+- Vacancies: a public Ukrainian IT job board.
+- Salaries: an open salary survey of Ukrainian developers (14,361 responses).
 
 ## Local development
 
